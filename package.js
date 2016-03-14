@@ -34,7 +34,11 @@ Package.onUse(function(api) {
   api.use("less");
   api.use("reactioncommerce:core@0.10.0");
 
+  api.use("reactioncommerce:reaction-router");
+  api.use("kadira:blaze-layout@2.3.0");
+
   api.addFiles('server/security/browserPolicy.js', 'server');
+  api.addFiles('server/register/register.js', 'server');
 
   api.addFiles('client/templates/snaxterLayout/index.html', 'client');
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.js', 'client');
@@ -56,11 +60,12 @@ Package.onUse(function(api) {
   api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.svg', 'client');
   api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2', 'client');
 
-  api.addFiles('client/templates/snaxterLayout/assets/socicon/css/socicon.min.css', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/style.css', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/animate.css/animate.min.css', 'client');
+  // http://stackoverflow.com/questions/24143504/meteor-package-how-to-add-static-files
+  api.addFiles('client/templates/snaxterLayout/assets/socicon/css/socicon.min.css', 'client');//, {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css', 'client');//, {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/style.css', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css', 'client');//, {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/animate.css/animate.min.css', 'client');//, {isAsset: true});
 
   api.addFiles('client/templates/snaxterLayout/assets/jquery-placeholder/jquery.placeholder.min.js', 'client');
   api.addFiles('client/templates/snaxterLayout/assets/mobirise/js/script.js', 'client');
@@ -72,7 +77,8 @@ Package.onUse(function(api) {
 
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.less', 'client');
 
-  api.addFiles('snaxter-template.js');
+  api.addFiles('client/routing/routing.js', 'client'); // why doesn't routing work in this file?
+  api.addFiles('snaxter-template.js', 'client'); // why doesn't routing work in this file?
 
 });
 
