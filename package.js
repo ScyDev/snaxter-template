@@ -64,7 +64,7 @@ Package.onUse(function(api) {
 
   api.addFiles('client/templates/snaxterLayout/assets/jquery-placeholder/jquery.placeholder.min.js', 'client');
   api.addFiles('client/templates/snaxterLayout/assets/mobirise/js/script.js', 'client');
-  //api.addFiles('client/templates/snaxterLayout/assets/web/assets/jquery/jquery.min.js', 'client');
+  api.addFiles('client/templates/snaxterLayout/assets/web/assets/jquery/jquery.min.js', 'client');
   api.addFiles('client/templates/snaxterLayout/assets/bootstrap/js/bootstrap.min.js', 'client');
   api.addFiles('client/templates/snaxterLayout/assets/formoid/formoid.min.js', 'client');
   api.addFiles('client/templates/snaxterLayout/assets/jarallax/jarallax.js', 'client');
