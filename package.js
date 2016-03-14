@@ -33,7 +33,7 @@ Package.onUse(function(api) {
   api.use('templating');
   api.use("less");
   api.use("reactioncommerce:core@0.10.0");
-
+  
   api.addAssets('client/templates/startPage/assets/socicon/fonts/socicon.woff', 'client');
   api.addAssets('client/templates/startPage/assets/socicon/fonts/socicon.ttf', 'client');
   api.addAssets('client/templates/startPage/assets/socicon/fonts/socicon.eot', 'client');
@@ -49,6 +49,7 @@ Package.onUse(function(api) {
   api.addAssets('client/templates/startPage/assets/bootstrap/fonts/glyphicons-halflings-regular.svg', 'client');
   api.addAssets('client/templates/startPage/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2', 'client');
 
+/*
   api.addFiles('client/templates/startPage/assets/socicon/css/socicon.min.css', 'client');
   api.addFiles('client/templates/startPage/assets/jquery-placeholder/jquery.placeholder.min.js', 'client');
   api.addFiles('client/templates/startPage/assets/mobirise/js/script.js', 'client');
@@ -61,6 +62,7 @@ Package.onUse(function(api) {
   api.addFiles('client/templates/startPage/assets/jarallax/jarallax.js', 'client');
   api.addFiles('client/templates/startPage/assets/animate.css/animate.min.css', 'client');
   api.addFiles('client/templates/startPage/assets/smooth-scroll/SmoothScroll.js', 'client');
+*/
   api.addFiles('client/templates/startPage/index.html', 'client');
   api.addFiles('client/templates/startPage/snaxterLayout.js', 'client');
 
