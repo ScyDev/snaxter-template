@@ -15,3 +15,11 @@ Template.snaxterLayout.onRendered(function(){
     //console.log("template 'layout' rendered!");
   }
 );
+
+Template.coreLayout.helpers(
+  {
+    urlForImage: function(relativeUrl) {
+      return "/packages/scydev_snaxter-template/client/templates/snaxterLayout/"+relativeUrl;
+    },
+  }
+);
