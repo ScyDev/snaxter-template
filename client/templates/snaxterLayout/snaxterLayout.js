@@ -10,9 +10,8 @@ Template.snaxterLayout.inheritsEventsFrom(["layoutCore"]);
 Template.snaxterLayout.inheritsHooksFrom(["layoutCore"]);
 */
 Template.snaxterLayout.replaces("coreLayout");
-console.log("ello?");
 
 Template.snaxterLayout.onRendered(function(){
-    console.log("template 'layout' rendered!");
+    //console.log("template 'layout' rendered!");
   }
 );
