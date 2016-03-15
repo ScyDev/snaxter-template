@@ -10,23 +10,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="Mobirise v2.9, mobirise.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{ urlForImage 'assets/images/icon-transparent-gelb-279x262-57.png' }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ urlFor 'assets/images/icon-transparent-gelb-279x262-57.png' }}" type="image/x-icon">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
-    <!-- these are loaded by meteor
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/animate.css/animate.min.css">
-    <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-    -->
-    <link rel="stylesheet" href="{{ urlForImage 'assets/mobirise/css/style.css' }}">
 
+    <!-- HEAD not active atm.
+    <link rel="stylesheet" href="{{ urlFor 'assets/bootstrap/css/bootstrap.min.css' }}">
+    <link rel="stylesheet" href="{{ urlFor 'assets/animate.css/animate.min.css' }}">
+    <link rel="stylesheet" href="{{ urlFor 'assets/socicon/css/socicon.min.css' }}">
+    <link rel="stylesheet" href="{{ urlFor 'assets/mobirise/css/mbr-additional.css' }}" type="text/css">
+    <link rel="stylesheet" href="{{ urlFor 'assets/mobirise/css/style.css' }}">
+  -->
   </head>
 </template>
 
 <template name="snaxterLayout">
-  <link rel="stylesheet" href="{{ urlForImage 'assets/mobirise/css/style.css' }}">
-  
+  <link rel="stylesheet" href="{{ urlFor 'assets/bootstrap/css/bootstrap.min.css' }}">
+  <link rel="stylesheet" href="{{ urlFor 'assets/animate.css/animate.min.css' }}">
+  <link rel="stylesheet" href="{{ urlFor 'assets/socicon/css/socicon.min.css' }}">
+  <link rel="stylesheet" href="{{ urlFor 'assets/mobirise/css/mbr-additional.css' }}" type="text/css">
+  <link rel="stylesheet" href="{{ urlFor 'assets/mobirise/css/style.css' }}">
+
   {{#if hasDashboardAccess}}
     {{> coreAdminLayout}}
   {{else}}
@@ -41,7 +45,7 @@
                 <div class="mbr-navbar__container">
                     <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
                         <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
-                            <span class="mbr-brand__logo"><a href="http://www.snaxter.ch"><img class="mbr-navbar__brand-img mbr-brand__img" src="{{ urlForImage 'assets/images/icon-transparent-gelb-279x262-57.png' }}" title="snaxter"></a></span>
+                            <span class="mbr-brand__logo"><a href="http://www.snaxter.ch"><img class="mbr-navbar__brand-img mbr-brand__img" src="{{ urlFor 'assets/images/icon-transparent-gelb-279x262-57.png' }}" title="snaxter"></a></span>
 
                         </span>
                     </div>
@@ -115,7 +119,7 @@
         </div>
     </section>
 
-    <section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background" id="header1-1" style="background-image: url({{ urlForImage 'assets/images/1920x1080-1920x1080-33.jpg' }});">
+    <section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background" id="header1-1" style="background-image: url({{ urlFor 'assets/images/1920x1080-1920x1080-33.jpg' }});">
         <div class="mbr-box__magnet mbr-box__magnet--sm-padding mbr-box__magnet--center-left">
             <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(34, 34, 34);"></div>
             <div class="mbr-box__container mbr-section__container container">
@@ -161,7 +165,7 @@
         </div>
     </section>
 
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="content5-15" style="background-image: url({{ urlForImage 'assets/images/pasta-527286-1920-1920x1212-47.jpg' }});">
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="content5-15" style="background-image: url({{ urlFor 'assets/images/pasta-527286-1920-1920x1212-47.jpg' }});">
         <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(40, 50, 78);"></div>
         <div class="mbr-section__container container mbr-section__container--first">
             <div class="mbr-header mbr-header--wysiwyg row">
@@ -213,7 +217,7 @@
         </div>
     </section>
 
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="content4-27" style="background-image: url({{ urlForImage 'assets/images/mushrooms-756406-1920-1920x1271-23.jpg' }});">
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="content4-27" style="background-image: url({{ urlFor 'assets/images/mushrooms-756406-1920-1920x1271-23.jpg' }});">
 
         <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container">
             <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
@@ -309,7 +313,7 @@
             <div class="row">
                 <div class="mbr-box mbr-box--fixed mbr-box--adapted">
                     <div class="mbr-box__magnet mbr-box__magnet--top-right mbr-section__left col-sm-6">
-                        <figure class="mbr-figure mbr-figure--adapted mbr-figure--caption-inside-bottom mbr-figure--full-width"><img class="mbr-figure__img" src="{{ urlForImage 'assets/images/icon-schmal-279x279-42.jpg' }}"></figure>
+                        <figure class="mbr-figure mbr-figure--adapted mbr-figure--caption-inside-bottom mbr-figure--full-width"><img class="mbr-figure__img" src="{{ urlFor 'assets/images/icon-schmal-279x279-42.jpg' }}"></figure>
                     </div>
                     <div class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 mbr-section__right">
                         <div class="mbr-section__container mbr-section__container--middle">
@@ -375,19 +379,17 @@
         </div>
     </section>
 
-    <!-- these are loaded by meteor
-      <script src="assets/web/assets/jquery/jquery.min.js"></script>
-      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/smooth-scroll/SmoothScroll.js"></script>
-      -->
+
+      <script src="{{ urlFor 'assets/web/assets/jquery/jquery.min.js' }}"></script>
+      <script src="{{ urlFor 'assets/bootstrap/js/bootstrap.min.js' }}"></script>
+      <script src="{{ urlFor 'assets/smooth-scroll/SmoothScroll.js' }}"></script>
       <!--[if lte IE 9]>
-        <script src="assets/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <script src="{{ urlFor 'assets/jquery-placeholder/jquery.placeholder.min.js"></script>
       <![endif]-->
-      <!--
-      <script src="assets/jarallax/jarallax.js"></script>
-      <script src="assets/mobirise/js/script.js"></script>
-      <script src="assets/formoid/formoid.min.js"></script>
-      -->
+      <script src="{{ urlFor 'assets/jarallax/jarallax.js' }}"></script>
+      <script src="{{ urlFor 'assets/mobirise/js/script.js' }}"></script>
+      <script src="{{ urlFor 'assets/formoid/formoid.min.js' }}"></script>
+
 
   {{/if}}
 </template>

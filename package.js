@@ -41,7 +41,7 @@ Package.onUse(function(api) {
 
   api.addFiles('client/templates/snaxterLayout/index.html', 'client');
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.js', 'client');
-  
+
   api.addFiles('client/routing/routing.js', 'client'); // this needs to be here. doesn't work further down. why?
 
   // apparently it's important that these come after template
@@ -62,19 +62,19 @@ Package.onUse(function(api) {
   api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2', 'client');
 
   // http://stackoverflow.com/questions/24143504/meteor-package-how-to-add-static-files
-  api.addFiles('client/templates/snaxterLayout/assets/socicon/css/socicon.min.css', 'client');//, {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css', 'client');//, {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/socicon/css/socicon.min.css', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css', 'client', {isAsset: true});
   api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/style.css', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css', 'client');//, {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/animate.css/animate.min.css', 'client');//, {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/animate.css/animate.min.css', 'client', {isAsset: true});
 
-  api.addFiles('client/templates/snaxterLayout/assets/jquery-placeholder/jquery.placeholder.min.js', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/mobirise/js/script.js', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/web/assets/jquery/jquery.min.js', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/bootstrap/js/bootstrap.min.js', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/formoid/formoid.min.js', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/jarallax/jarallax.js', 'client');
-  api.addFiles('client/templates/snaxterLayout/assets/smooth-scroll/SmoothScroll.js', 'client');
+  api.addFiles('client/templates/snaxterLayout/assets/jquery-placeholder/jquery.placeholder.min.js', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/mobirise/js/script.js', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/web/assets/jquery/jquery.min.js', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/bootstrap/js/bootstrap.min.js', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/formoid/formoid.min.js', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/jarallax/jarallax.js', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/assets/smooth-scroll/SmoothScroll.js', 'client', {isAsset: true});
 
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.less', 'client');
 
