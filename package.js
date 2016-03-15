@@ -38,10 +38,10 @@ Package.onUse(function(api) {
   api.use("kadira:blaze-layout@2.3.0");
 
   api.addFiles('server/security/browserPolicy.js', 'server');
-  api.addFiles('server/register/register.js', 'server');
 
   api.addFiles('client/templates/snaxterLayout/index.html', 'client');
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.js', 'client');
+  
   api.addFiles('client/routing/routing.js', 'client'); // this needs to be here. doesn't work further down. why?
 
   // apparently it's important that these come after template
