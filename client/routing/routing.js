@@ -1,6 +1,6 @@
 
 console.log("setting up route...");
-ReactionRouter.route('/starting/page/adl', {
+ReactionRouter.route('/startingness/page/adl', {
   action: function() {
     console.log("route in action!");
     BlazeLayout.render("snaxterLayout"); // , {content: "blogHome"}

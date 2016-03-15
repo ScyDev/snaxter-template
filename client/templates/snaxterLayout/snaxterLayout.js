@@ -12,14 +12,6 @@ Template.snaxterLayout.inheritsHooksFrom(["layoutCore"]);
 */
 //Template.snaxterLayout.replaces("coreLayout");
 
-console.log("setting up route...");
-ReactionRouter.route('/starting/page/adl', {
-  action: function() {
-    console.log("route in action!");
-    BlazeLayout.render("snaxterLayout"); // , {content: "blogHome"}
-  }
-});
-
 Template.snaxterLayout.onRendered(function(){
     //console.log("template 'layout' rendered!");
   }

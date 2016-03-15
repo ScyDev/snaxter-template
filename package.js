@@ -42,6 +42,7 @@ Package.onUse(function(api) {
 
   api.addFiles('client/templates/snaxterLayout/index.html', 'client');
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.js', 'client');
+  api.addFiles('client/routing/routing.js', 'client'); // this needs to be here. doesn't work further down. why?
 
   // apparently it's important that these come after template
   api.addAssets('client/templates/snaxterLayout/assets/images/pasta-527286-1920-1920x1212-47.jpg', 'client');
@@ -77,8 +78,6 @@ Package.onUse(function(api) {
 
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.less', 'client');
 
-  api.addFiles('client/routing/routing.js', 'client'); // why doesn't routing work in this file?
-  api.addFiles('snaxter-template.js', 'client'); // why doesn't routing work in this file?
 
 });
 
