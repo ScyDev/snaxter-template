@@ -1,5 +1,12 @@
 <template name="snaxterHead">
 <head>
+
+  <title>snaxter - hausgemacht rockt</title>
+  <!--<title>{{metaData.name}} | {{metaData.title}}</title>-->
+  {{#each metaData.meta}}
+    <meta name="{{name}}" content="{{content}}">
+  {{/each}}
+
   <!-- Site made with Mobirise Website Builder v2.9, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +14,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="{{ urlFor 'assets/images/icon-inkl-rand-827x827-31.jpg' }}" type="image/x-icon">
   <meta name="description" content="hausgemachtes aus deinem quartier">
-  <title>snaxter - hausgemacht rockt</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
 
   <!-- Paste any valid HTML code here. The code will be inserted to the end of <head> section, right before </head> -->
@@ -378,15 +384,15 @@
   </section>
 
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smooth-scroll/SmoothScroll.js"></script>
+  <script src="{{ urlFor 'assets/web/assets/jquery/jquery.min.js' }}"></script>
+  <script src="{{ urlFor 'assets/bootstrap/js/bootstrap.min.js' }}"></script>
+  <script src="{{ urlFor 'assets/smooth-scroll/SmoothScroll.js' }}"></script>
   <!--[if lte IE 9]>
-    <script src="assets/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <script src="{{ urlFor 'assets/jquery-placeholder/jquery.placeholder.min.js' }}"></script>
   <![endif]-->
-  <script src="assets/jarallax/jarallax.js"></script>
-  <script src="assets/mobirise/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="{{ urlFor 'assets/jarallax/jarallax.js' }}"></script>
+  <script src="{{ urlFor 'assets/mobirise/js/script.js' }}"></script>
+  <script src="{{ urlFor 'assets/formoid/formoid.min.js' }}"></script>
 
   <!-- Paste any valid HTML code here. The code will be inserted to the end of <body> section, right before </body> -->
   {{/if}}
