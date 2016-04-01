@@ -85,6 +85,8 @@ Package.onUse(function(api) {
 
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.less', 'client');
 
+  api.addFiles('server/register.js', 'server');
+  api.addFiles('server/methods/accounts.js', 'server');
 
 });
 

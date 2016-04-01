@@ -77,8 +77,11 @@
                 <span id="layout-alerts">{{> inlineAlerts}}</span>
                 {{#if hasPermission 'guest'}}
                   <!-- begin template region -->
-                  {{> Template.dynamic template=template}}
-
+                  <!--
+                  {{> Template.dynamic template=template }}
+                -->
+                  {{>products}}
+                  
                   <!-- end template region -->
                 {{/if}}
 
