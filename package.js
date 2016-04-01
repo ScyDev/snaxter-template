@@ -45,11 +45,13 @@ Package.onUse(function(api) {
   api.addFiles('client/routing/routing.js', 'client'); // this needs to be here. doesn't work further down. why?
 
   // apparently it's important that these come after template
+  /*
   api.addAssets('client/templates/snaxterLayout/assets/images/pasta-527286-1920-1920x1212-47.jpg', 'client');
   api.addAssets('client/templates/snaxterLayout/assets/images/icon-transparent-gelb-279x262-57.png', 'client');
   api.addAssets('client/templates/snaxterLayout/assets/images/icon-schmal-279x279-42.jpg', 'client');
   api.addAssets('client/templates/snaxterLayout/assets/images/1920x1080-1920x1080-33.jpg', 'client');
   api.addAssets('client/templates/snaxterLayout/assets/images/mushrooms-756406-1920-1920x1271-23.jpg', 'client');
+  */
 
   api.addAssets('client/templates/snaxterLayout/assets/socicon/fonts/socicon.woff', 'client');
   api.addAssets('client/templates/snaxterLayout/assets/socicon/fonts/socicon.ttf', 'client');
@@ -66,7 +68,7 @@ Package.onUse(function(api) {
   api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css', 'client', {isAsset: true});
   api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/style.css', 'client', {isAsset: true});
   api.addFiles('client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/animate.css/animate.min.css', 'client', {isAsset: true});
+  //api.addFiles('client/templates/snaxterLayout/assets/animate.css/animate.min.css', 'client', {isAsset: true});
 
   api.addFiles('client/templates/snaxterLayout/assets/jquery-placeholder/jquery.placeholder.min.js', 'client', {isAsset: true});
   api.addFiles('client/templates/snaxterLayout/assets/mobirise/js/script.js', 'client', {isAsset: true});
