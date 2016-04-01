@@ -45,13 +45,18 @@ Package.onUse(function(api) {
   api.addFiles('client/routing/routing.js', 'client'); // this needs to be here. doesn't work further down. why?
 
   // apparently it's important that these come after template
-  /*
-  api.addAssets('client/templates/snaxterLayout/assets/images/pasta-527286-1920-1920x1212-47.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/icon-transparent-gelb-279x262-57.png', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/icon-schmal-279x279-42.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/1920x1080-1920x1080-33.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/mushrooms-756406-1920-1920x1271-23.jpg', 'client');
-  */
+  api.addAssets('client/templates/snaxterLayout/assets/images/hintergrund-homepage-neu-2000x1050-13-1400x735-28.png', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/hintergrund-homepage-neu-2000x1050-13.png', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-26.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-52.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-54.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-56.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/icon-inkl-rand-827x827-31.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/socialmedia-1920x1357-31-1920x1357-44.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-59-1900x1250-70.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-59.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-84.jpg', 'client');
+  api.addAssets('client/templates/snaxterLayout/assets/images/zuckerrohr-dunkel-1920x579-39.png', 'client');
 
   api.addAssets('client/templates/snaxterLayout/assets/socicon/fonts/socicon.woff', 'client');
   api.addAssets('client/templates/snaxterLayout/assets/socicon/fonts/socicon.ttf', 'client');
