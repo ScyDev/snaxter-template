@@ -3,7 +3,7 @@ Template.snaxterHead.inheritsHelpersFrom(["coreHead"]);
 Template.snaxterHead.inheritsEventsFrom(["coreHead"]);
 Template.snaxterHead.inheritsHooksFrom(["coreHead"]);
 */
-//Template.snaxterHead.replaces("coreHead");
+Template.snaxterHead.replaces("coreHead");
 
 /*
 Template.snaxterLayout.inheritsHelpersFrom(["coreLayout"]);
