@@ -41,6 +41,8 @@ Package.onUse(function(api) {
 
   api.addFiles('client/templates/snaxterLayout/index.html', 'client');
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.js', 'client');
+  api.addFiles('client/templates/snaxterLayout/snaxterNavigationBrand.html', 'client');
+  api.addFiles('client/templates/snaxterLayout/snaxterNavigationBrand.js', 'client');
 
   api.addFiles('client/routing/routing.js', 'client'); // this needs to be here. doesn't work further down. why?
 

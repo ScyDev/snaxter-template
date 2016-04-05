@@ -1,0 +1,10 @@
+<template name="snaxterNavigationBrand">
+  <a class="brand" href="/">
+    {{#with logo}}
+      <div class="logo">
+        <img src="{{url}}">
+      </div>
+    {{/with}}
+    <span class="title">{{i18n 'products.all' 'All'}}</span>
+  </a>
+</template>
