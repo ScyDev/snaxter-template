@@ -29,12 +29,12 @@ renderLayout = (options = {}) => {
   });
 };*/
 
-
+/*
 ReactionRouter.route('/', {
   action: function() {
     BlazeLayout.render("snaxterLayout"); // , {content: "blogHome"}
   }
-});
+});*/
 
 /*
 ReactionRouter.route('/reaction/products', {

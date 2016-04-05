@@ -40,25 +40,6 @@
               </span>
             </div>
 
-            <nav class="reaction-navigation-header">
-              <!-- begin layoutHeader -->
-              <!-- doesn't work
-              {{> Template.dynamic template=layoutHeader}}
-              -->
-
-              <!-- works, but not ideal with template header bar
-              {{>layoutHeader}}
-              -->
-
-              <!-- end layoutHeader -->
-            </nav>
-
-            <nav class="reaction-cart-drawer">
-              {{>cartDrawer}}
-            </nav>
-
-
-
           <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
             <div class="mbr-navbar__column mbr-navbar__menu">
               <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
@@ -78,28 +59,30 @@
           <div class="col-sm-12">
             <div class="row">
 
-              <main role="main" id="main">
-                <span id="layout-alerts">{{> inlineAlerts}}</span>
-                {{#if hasPermission 'guest'}}
-                  <!-- begin template region -->
-                  <!--
-                  {{> Template.dynamic template=template }}
-                -->
-                  {{>layoutHeader}}
 
-                  {{>products}}
+                <nav class="reaction-navigation-header">
+                  <!-- begin layoutHeader -->
+                  {{> Template.dynamic template=layoutHeader}}
+                  <!-- end layoutHeader -->
+                </nav>
 
-                  <!-- end template region -->
-                {{/if}}
+                <nav class="reaction-cart-drawer">
+                  {{>cartDrawer}}
+                </nav>
 
-                <footer class="reaction-navigation-footer footer-default">{{> Template.dynamic template=layoutFooter}}</footer>
+                <main role="main" id="main">
+                  <span id="layout-alerts">{{> inlineAlerts}}</span>
+                  {{#if hasPermission 'guest'}}
+                    <!-- begin template region -->
+                    {{> Template.dynamic template=template}}
+                    <!-- end template region -->
+                  {{/if}}
 
-              </main>
+                  <footer class="reaction-navigation-footer footer-default">{{> Template.dynamic template=layoutFooter}}</footer>
+                </main>
+
+
               <br />
-              <br />
-              <br />
-
-
 
               <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
                 <div class="mbr-header mbr-header--center mbr-header--std-padding">
