@@ -17,11 +17,28 @@ Template.snaxterLayout.onRendered(function(){
   }
 );
 
+Template.coreLayout.onCreated(function(){
+  /*
+    Tracker.autorun(function() {
+      var routeName = ReactionRouter.getRouteName();
+      console.log("Current route name is: ", routeName);
+    });
+    */
+  }
+);
+
+
 Template.coreLayout.helpers( // if using to replace a template
 //Template.snaxterLayout.helpers( // if this template is rendered by a route
   {
     urlFor: function(relativeUrl) {
       return "/packages/scydev_snaxter-template/client/templates/snaxterLayout/"+relativeUrl;
+    },
+    showStartPageLayout: function() {
+      var routeName = ReactionRouter.getRouteName();
+      //console.log("Current route name is: ", routeName);
+
+      return (routeName != null && routeName == "index");
     },
   }
 );
