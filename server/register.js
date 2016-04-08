@@ -1,10 +1,10 @@
 ReactionCore.registerPackage({
-  label: "Snaxter Package",
+  label: "Snaxter Template",
   name: "snaxter-template",
   icon: "fa fa-cubes",
   autoEnable: true,
   registry: [
-    
+
     {
       route: "/", // doesn't work. doing it in routing.js
       name: "startPage",
