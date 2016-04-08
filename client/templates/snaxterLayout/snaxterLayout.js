@@ -42,5 +42,13 @@ Template.coreLayout.helpers( // if using to replace a template
 
       return (routeName != null && routeName == "index");
     },
+    hostname: function() {
+      let rootUrl = Meteor.absoluteUrl();
+      console.log("Meteor.absoluteUrl(): "+rootUrl);
+      if (rootUrl == "http://localhost/") {
+        rootUrl = "http://localhost:3000/";
+      }
+      return rootUrl;
+    }
   }
 );
