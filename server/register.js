@@ -4,13 +4,13 @@ ReactionCore.registerPackage({
   icon: "fa fa-cubes",
   autoEnable: true,
   registry: [
-
+    /*
     {
       route: "/", // doesn't work. doing it in routing.js
       name: "startPage",
       template: "snaxterLayout",
       //workflow: "coreProductWorkflow"
-    },
+    },*/
     {
       route: "/products",
       name: "productsPage",
