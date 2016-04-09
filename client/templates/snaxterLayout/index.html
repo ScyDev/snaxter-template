@@ -84,9 +84,13 @@
                 <main role="main" id="main">
                   <span id="layout-alerts">{{> inlineAlerts}}</span>
                   {{#if hasPermission 'guest'}}
-                    <!-- begin template region -->
-                    {{> Template.dynamic template=template}}
-                    <!-- end template region -->
+
+                    {{#if userIsUndecided }}
+                      {{>marketplaceUserDecision }}
+                    {{else}}
+                      {{> Template.dynamic template=template}}
+                    {{/if}}
+
                   {{/if}}
 
                   <footer class="reaction-navigation-footer footer-default">{{> Template.dynamic template=layoutFooter}}</footer>

@@ -49,6 +49,19 @@ Template.coreLayout.helpers( // if using to replace a template
         rootUrl = "http://localhost:3000/";
       }
       return rootUrl;
+    },
+    userIsUndecided: function() {
+      let user = Meteor.users.findOne(Meteor.userId());
+      console.log("userIsUndecided: ",user);
+
+      if (user.profile == null) {
+        return false; // not really decided, but we don't wanna force guest user to decide
+      }
+      else if (user.profile.isDecided) {
+        return false;
+      }
+
+      return true;
     }
   }
 );
