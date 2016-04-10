@@ -3,9 +3,18 @@
 some corrections to make Snaxter Template work with Reaction
 */
 
-.mbr-navbar--short.mbr-navbar--sticky .mbr-navbar__section {
-    position: static !important;
+.mbr-navbar--sticky .mbr-navbar__section,
+.mbr-navbar--stuck .mbr-navbar__section {
+    z-index: 1;
 }
+
+.mbr-navbar--short.mbr-navbar--sticky .mbr-navbar__section,
+.mbr-navbar--short.mbr-navbar--stuck .mbr-navbar__section {
+    position: static !important;
+    z-index: 0;
+}
+
+.mbr-navbar__section
 
 #menu-0 {
   disp__lay: none;
