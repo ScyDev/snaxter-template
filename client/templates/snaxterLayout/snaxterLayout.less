@@ -1,4 +1,8 @@
 
+@import "{reactioncommerce:reaction-ui}/client/styles/variables.less";
+@import "{reactioncommerce:reaction-ui}/client/styles/mixins.less";
+
+
 /*
 some corrections to make Snaxter Template work with Reaction
 */
@@ -67,4 +71,27 @@ div.product-variants .form-control {
       margin-left: 0 !important;
       margin-right: 0 !important;
   }
+}
+
+.product-list .table > tbody > tr > td.no-border {
+  border-top: 0 !important;
+}
+
+.product-info-block {
+  float: left;
+  width: 150px;
+  margin-bottom:
+  20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: @screen-xs-max) {
+  .product-info-block {
+    float: none;
+    min-width: 200px;
+  }
+}
+
+.product-desc {
+  min-width: 300px;
 }
