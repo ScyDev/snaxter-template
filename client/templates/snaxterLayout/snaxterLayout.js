@@ -44,7 +44,7 @@ Template.coreLayout.helpers( // if using to replace a template
     },
     hostname: function() {
       let rootUrl = Meteor.absoluteUrl();
-      console.log("Meteor.absoluteUrl(): "+rootUrl);
+      //console.log("Meteor.absoluteUrl(): "+rootUrl);
       if (rootUrl == "http://localhost/") {
         rootUrl = "http://localhost:3000/";
       }
@@ -52,7 +52,7 @@ Template.coreLayout.helpers( // if using to replace a template
     },
     userIsUndecided: function() {
       let user = Meteor.users.findOne(Meteor.userId());
-      console.log("userIsUndecided: ",user);
+      //console.log("userIsUndecided: ",user);
 
       if (user.profile == null) {
         return false; // not really decided, but we don't wanna force guest user to decide
