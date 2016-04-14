@@ -105,12 +105,25 @@ div.product-variants .form-control {
   height: auto;
 }
 
-.product-detail-map .address-text {
-  padding-left: 20px;
-}
-
 .form-control {
   padding: 6px 12px !important;
+}
+
+/*
+.product-detail-map .address-text {
+  padding-left: 20px;
+}*/
+
+@media screen and (min-width: @screen-xs-max) {
+  .product-detail-map h2,
+  .product-detail-map div.address-text {
+    margin-left: -90%;
+    padding-left: 20px;
+  }
+  .product-map {
+      width: 200%;
+      margin-left: -90%;
+  }
 }
 
 @media screen and (max-width: @screen-xs-max) {
