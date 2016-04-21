@@ -71,10 +71,16 @@ Package.onUse(function(api) {
   api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2', 'client');
 
   // http://stackoverflow.com/questions/24143504/meteor-package-how-to-add-static-files
-  api.addFiles('client/templates/snaxterLayout/assets/socicon/css/socicon.min.css', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/mobirise/css/style.css', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css', 'client', {isAsset: true});
+  api.addFiles([
+      'client/templates/snaxterLayout/assets/socicon/css/socicon.min.css',
+      'client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css',
+      'client/templates/snaxterLayout/assets/mobirise/css/style.css',
+      'client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css',
+    ],
+    'client',
+    {}
+    //{isAsset: true}
+  );
   //api.addFiles('client/templates/snaxterLayout/assets/animate.css/animate.min.css', 'client', {isAsset: true});
 
   api.addFiles('client/templates/snaxterLayout/assets/jquery-placeholder/jquery.placeholder.min.js', 'client', {isAsset: true});
