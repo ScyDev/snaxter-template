@@ -12,13 +12,16 @@ some corrections to make Snaxter Template work with Reaction
     z-index: 1;
 }
 
+.mbr-navbar__section,
 .mbr-navbar--short.mbr-navbar--sticky .mbr-navbar__section,
 .mbr-navbar--short.mbr-navbar--stuck .mbr-navbar__section {
     position: static !important;
     z-index: 0;
 }
 
-.mbr-navbar__section
+.mbr-navbar:before, .mbr-navbar__container {
+  height: 0px !important;
+}
 
 #menu-0 {
   disp__lay: none;
