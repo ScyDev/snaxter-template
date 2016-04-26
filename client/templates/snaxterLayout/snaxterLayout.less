@@ -118,14 +118,25 @@ div.product-variants .form-control {
 }
 
 @media screen and (min-width: @screen-xs-max) {
-
+  #title {
+    font-size: 35px;
+  }
+  .col-xs-8 .price {
+    font-size: 25px;
+    margin: 0px 0px 0px -14px;
+  }
 }
 
 @media screen and (max-width: @screen-xs-max) {
   .container-main {
       padding: 20px 10px 135px 10px;
   }
-
+  #title {
+    font-size: 25px;
+  }
+  .col-xs-8 .price {
+    font-size: 20px;
+  }
   .product-detail-edit.description-edit,
   .product-detail-field.description {
     padding: 15px;
