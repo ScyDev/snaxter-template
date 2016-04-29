@@ -1,0 +1,19 @@
+
+  /* fix for IE */
+  .user-decision-page .flex-item .panel {
+    width: 100%;
+  }
+
+  /* fix for IE */
+  .profile-page .flex-item .panel,
+  .profile-edit-page .flex-item .panel {
+    width: 100%;
+  }
+
+  /* fixes for IE */
+  .profile-page .flex .flex-item,
+  .profile-page .flex-item .panel .panel-content,
+  .profile-edit-page .flex .flex-item,
+  .profile-edit-page .flex-item .panel .panel-content {
+    height: 100%;
+  }

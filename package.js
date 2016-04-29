@@ -91,6 +91,9 @@ Package.onUse(function(api) {
   api.addFiles('client/templates/snaxterLayout/assets/jarallax/jarallax.js', 'client', {isAsset: true});
   api.addFiles('client/templates/snaxterLayout/assets/smooth-scroll/SmoothScroll.js', 'client', {isAsset: true});
 
+  api.addFiles('client/templates/snaxterLayout/ie-css-hacks.css', 'client', {isAsset: true});
+  api.addFiles('client/templates/snaxterLayout/ie-css-hacks-10-up.css', 'client');
+
   api.addFiles('client/templates/snaxterLayout/snaxterLayout.less', 'client');
 
   api.addFiles('server/register.js', 'server');
