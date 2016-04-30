@@ -91,7 +91,11 @@
                     {{#if userIsUndecided }}
                       {{>marketplaceUserDecision }}
                     {{else}}
-                      {{> Template.dynamic template=template}}
+                      {{#if redirectToAddressEntry }}
+                        {{> accountProfile }}
+                      {{else}}
+                        {{> Template.dynamic template=template}}
+                      {{/if}}
                     {{/if}}
 
                   {{/if}}

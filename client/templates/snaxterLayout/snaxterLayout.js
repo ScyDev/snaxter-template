@@ -18,6 +18,7 @@ Template.snaxterLayout.onRendered(function(){
 );
 
 Template.coreLayout.onCreated(function(){
+  ReactionCore.Subscriptions.Account = ReactionSubscriptions.subscribe("Accounts", Meteor.userId());
   /*
     Tracker.autorun(function() {
       var routeName = ReactionRouter.getRouteName();
@@ -62,6 +63,38 @@ Template.coreLayout.helpers( // if using to replace a template
       }
 
       return true;
-    }
+    },
+    redirectToAddressEntry: function() {
+      if (ReactionRouter.current().route.name == "account/profile") {
+        return false;
+      }
+
+      let user = ReactionCore.Collections.Accounts.findOne();
+      //let user = ReactionCore.Collections.Accounts.findOne(Meteor.userId());
+      console.log("userHasAddress: ",user);
+      if (user == null) {
+        return false;
+      }
+
+      if (user != null && user.profile != null && user.profile.addressBook != null
+          && user.profile.addressBook.length > 0) {
+        return false;
+      }
+      else {
+        Alerts.alert(
+          {
+            title: i18next.t("accountsUI.error.noAddress", "No address"),
+            text: i18next.t("accountsUI.error.youNeedToEnterYourAddress", "You need to enter your address."),
+            type: "info",
+          },
+          function() {
+            //ReactionRouter.go("/account/profile");
+            //window.location.href = "/snaxter/account/profile";
+          }
+        );
+        return true;
+      }
+
+    },
   }
 );
