@@ -13,12 +13,10 @@ Template.snaxterLayout.inheritsHooksFrom(["coreLayout"]);
 Template.snaxterLayout.replaces("coreLayout");
 
 Template.snaxterLayout.onRendered(function(){
-    //console.log("template 'layout' rendered!");
   }
 );
 
 Template.coreLayout.onCreated(function(){
-  ReactionCore.Subscriptions.Account = ReactionSubscriptions.subscribe("Accounts", Meteor.userId());
   /*
     Tracker.autorun(function() {
       var routeName = ReactionRouter.getRouteName();
@@ -69,30 +67,33 @@ Template.coreLayout.helpers( // if using to replace a template
         return false;
       }
 
-      let user = ReactionCore.Collections.Accounts.findOne();
-      //let user = ReactionCore.Collections.Accounts.findOne(Meteor.userId());
-      console.log("userHasAddress: ",user);
-      if (user == null) {
-        return false;
-      }
+      if (ReactionCore.Subscriptions.Account.ready()) {
+        console.log("Account sub ready");
+        let user = ReactionCore.Collections.Accounts.findOne();
+        //let user = ReactionCore.Collections.Accounts.findOne(Meteor.userId());
+        console.log("userHasAddress: ",user);
+        if (user == null) {
+          return false;
+        }
 
-      if (user != null && user.profile != null && user.profile.addressBook != null
-          && user.profile.addressBook.length > 0) {
-        return false;
-      }
-      else {
-        Alerts.alert(
-          {
-            title: i18next.t("accountsUI.error.noAddress", "No address"),
-            text: i18next.t("accountsUI.error.youNeedToEnterYourAddress", "You need to enter your address."),
-            type: "info",
-          },
-          function() {
-            //ReactionRouter.go("/account/profile");
-            //window.location.href = "/snaxter/account/profile";
-          }
-        );
-        return true;
+        if (user != null && user.profile != null && user.profile.addressBook != null
+            && user.profile.addressBook.length > 0) {
+          return false;
+        }
+        else {
+          Alerts.alert(
+            {
+              title: i18next.t("accountsUI.error.noAddress", "No address"),
+              text: i18next.t("accountsUI.error.youNeedToEnterYourAddress", "You need to enter your address."),
+              type: "info",
+            },
+            function() {
+              //ReactionRouter.go("/account/profile");
+              //window.location.href = "/snaxter/account/profile";
+            }
+          );
+          return true;
+        }
       }
 
     },
