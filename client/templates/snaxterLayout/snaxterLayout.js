@@ -63,6 +63,9 @@ Template.coreLayout.helpers( // if using to replace a template
       return true;
     },
     redirectToAddressEntry: function() {
+      if (!Blaze._globalHelpers.isLoggedIn(false)) {
+        return false;
+      }
       if (ReactionRouter.current().route.name == "account/profile") {
         return false;
       }
