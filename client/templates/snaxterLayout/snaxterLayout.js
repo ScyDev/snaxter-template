@@ -71,15 +71,17 @@ Template.coreLayout.helpers( // if using to replace a template
       }
 
       if (ReactionCore.Subscriptions.Account.ready()) {
-        console.log("Account sub ready");
-        let user = ReactionCore.Collections.Accounts.findOne();
+        console.log("snaxterLayout.js: Account sub ready");
+        let user = ReactionCore.Collections.Accounts.findOne({_id: Meteor.userId()});
         //let user = ReactionCore.Collections.Accounts.findOne(Meteor.userId());
         console.log("userHasAddress: ",user);
         if (user == null) {
           return false;
         }
 
-        if (user != null && user.profile != null && user.profile.addressBook != null
+        if (user != null
+            && user.profile != null
+            && user.profile.addressBook != null
             && user.profile.addressBook.length > 0) {
           return false;
         }
