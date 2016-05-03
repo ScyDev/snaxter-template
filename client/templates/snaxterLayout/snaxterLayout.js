@@ -70,6 +70,7 @@ Template.coreLayout.helpers( // if using to replace a template
         return false;
       }
 
+      ReactionCore.Subscriptions.Account = ReactionSubscriptions.subscribe("Accounts", Meteor.userId());
       if (ReactionCore.Subscriptions.Account.ready()) {
         console.log("snaxterLayout.js: Account sub ready");
         let user = ReactionCore.Collections.Accounts.findOne({_id: Meteor.userId()});
@@ -86,6 +87,7 @@ Template.coreLayout.helpers( // if using to replace a template
           return false;
         }
         else {
+          /*
           Alerts.alert(
             {
               title: i18next.t("accountsUI.error.noAddress", "No address"),
@@ -96,7 +98,7 @@ Template.coreLayout.helpers( // if using to replace a template
               //ReactionRouter.go("/account/profile");
               //window.location.href = "/snaxter/account/profile";
             }
-          );
+          );*/
           return true;
         }
       }
