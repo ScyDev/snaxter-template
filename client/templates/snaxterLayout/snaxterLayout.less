@@ -180,3 +180,13 @@ div.product-variants .form-control {
 .mbr-navbar--open {
   z-index: 4;
 }
+
+// fix for iPhone 6, where flex is broken and display the products in 2 columns
+@media screen and (max-width: @screen-xs-max) {
+  .product-grid-list {
+    display: block;
+  }
+  .product-grid-item.product-small {
+      width: 100%;
+  }
+}
