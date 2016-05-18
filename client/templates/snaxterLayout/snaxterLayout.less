@@ -208,8 +208,26 @@ div.product-variants .form-control {
   text-overflow: ellipsis;
 }
 
+
+
 .product-list h3 {
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.product-list .table.table-hover{
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.product-list .table.table-hover td{
+  max-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .title h1 .product-detail-field.title {
