@@ -54,3 +54,24 @@ ReactionRouter.route('/productGrid', {
     BlazeLayout.render("productGrid");
   }
 });*/
+
+ReactionRouter.route('/user/register', {
+  action: function() {
+    //BlazeLayout.render("coreLayout", "loginFormSignUpView"); // no worky
+    //BlazeLayout.render("coreLayout"); // framed 404
+    //BlazeLayout.render("snaxterLayout"); // framed 404
+    //BlazeLayout.render("snaxterLayout", {main: "loginFormSignUpView", dynamic: "loginFormSignUpView", content: "loginFormSignUpView", template: "loginFormSignUpView"}); // 404
+    //BlazeLayout.render("loginFormSignUpView"); // works, but without frame
+
+    /*
+    ReactionLayout({
+      layout: "coreLayout",
+      template: "loginFormSignUpView",
+    });*/
+
+    ReactionRouter.renderLayout({
+      layout: "coreLayout",
+      template: "loginFormSignUpView",
+    });
+  }
+});
