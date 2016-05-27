@@ -34,7 +34,7 @@ Template.coreLayout.helpers( // if using to replace a template
       return "/packages/scydev_snaxter-template/client/templates/snaxterLayout/"+relativeUrl;
     },
     showStartPageLayout: function() {
-      return false; // because for the moment we have a separate static start page
+      //return false; // because for the moment we have a separate static start page
 
       var routeName = ReactionRouter.getRouteName();
       //console.log("Current route name is: ", routeName);
