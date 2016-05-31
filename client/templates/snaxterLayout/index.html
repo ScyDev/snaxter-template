@@ -1,31 +1,21 @@
-<template name="snaxterHead">
-  <head>
-    <title>snaxter - hausgemacht rockt</title>
-    <!--<title>{{metaData.name}} | {{metaData.title}}</title>-->
-    {{#each metaData.meta}}
-      <meta name="{{name}}" content="{{content}}">
-    {{/each}}
+<head>
+  <title>snaxter - Hausgemacht rockt</title>
 
-    <!-- Site made with Mobirise Website Builder v2.9, https://mobirise.com -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v2.9, mobirise.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{ urlFor 'assets/images/icon-inkl-rand-827x827-31.jpg' }}" type="image/x-icon">
-    <meta name="description" content="hausgemachtes aus deinem quartier">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+  <!-- Site made with Mobirise Website Builder v2.9, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v2.9, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{{ urlFor 'assets/images/icon-inkl-rand-827x827-31.jpg' }}" type="image/x-icon">
+  <meta name="description" content="hausgemachtes aus deinem quartier">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/packages/scydev_snaxter-template/client/templates/snaxterLayout/ie-css-hacks.css" />
+<![endif]-->
+</head>
 
-    <!-- Paste any valid HTML code here. The code will be inserted to the end of <head> section, right before </head> -->
-  </head>
-</template>
 
 <template name="snaxterLayout">
-<!--
-  <link rel="stylesheet" href="{{ urlFor 'assets/bootstrap/css/bootstrap.min.css' }}">
-  <link rel="stylesheet" href="{{ urlFor 'assets/socicon/css/socicon.min.css' }}">
-  <link rel="stylesheet" href="{{ urlFor 'assets/mobirise/css/style.css' }}">
-  <link rel="stylesheet" href="{{ urlFor 'assets/mobirise/css/mbr-additional.css' }}" type="text/css">
--->
   {{#if hasDashboardAccess}}
     {{> coreAdminLayout}}
   {{else}}
@@ -410,21 +400,10 @@
     </div>
   </section>
 
-<!-- don't need fancy dynamic effects for this minimal template frame-->
-  <script src="{{ urlFor 'assets/web/assets/jquery/jquery.min.js' }}"></script>
-  <script src="{{ urlFor 'assets/smooth-scroll/SmoothScroll.js' }}"></script>
   <!--[if lte IE 9]>
     <script src="{{ urlFor 'assets/jquery-placeholder/jquery.placeholder.min.js' }}"></script>
   <![endif]-->
-  <script src="{{ urlFor 'assets/jarallax/jarallax.js' }}"></script>
+  <script src="{{ urlFor 'assets/formoid/formoid.min.js' }}"></script>
 
-<script src="{{ urlFor 'assets/mobirise/js/script.js' }}"></script>
-<script src="{{ urlFor 'assets/formoid/formoid.min.js' }}"></script>
-
-<!--[if IE]>
-	<link rel="stylesheet" type="text/css" href="/packages/scydev_snaxter-template/client/templates/snaxterLayout/ie-css-hacks.css" />
-<![endif]-->
-
-  <!-- Paste any valid HTML code here. The code will be inserted to the end of <body> section, right before </body> -->
   {{/if}}
 </template>

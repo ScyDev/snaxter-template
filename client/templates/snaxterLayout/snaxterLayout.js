@@ -3,7 +3,7 @@ Template.snaxterHead.inheritsHelpersFrom(["coreHead"]);
 Template.snaxterHead.inheritsEventsFrom(["coreHead"]);
 Template.snaxterHead.inheritsHooksFrom(["coreHead"]);
 */
-Template.snaxterHead.replaces("coreHead");
+// Template.snaxterHead.replaces("coreHead");
 
 /*
 Template.snaxterLayout.inheritsHelpersFrom(["coreLayout"]);
@@ -12,17 +12,16 @@ Template.snaxterLayout.inheritsHooksFrom(["coreLayout"]);
 */
 Template.snaxterLayout.replaces("coreLayout");
 
-Template.snaxterLayout.onRendered(function(){
-  }
-);
+Template.coreLayout.onRendered(function(){
+  window.initParallaxEtc();
+});
 
 Template.coreLayout.onCreated(function(){
-  /*
     Tracker.autorun(function() {
       var routeName = ReactionRouter.getRouteName();
-      console.log("Current route name is: ", routeName);
+      // console.log("Current route name is: ", routeName);
+      Meteor.setTimeout(function() { window.initParallaxEtc();console.log("Current route name is: "); }, 200);
     });
-    */
   }
 );
 

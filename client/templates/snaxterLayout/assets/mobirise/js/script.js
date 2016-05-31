@@ -1,5 +1,4 @@
-(function($){
-
+window.initParallaxEtc = function($ = jQuery) {
     $.extend($.easing, {
         easeInOutCubic : function(x, t, b, c, d){
             if ((t/=d/2) < 1) return c/2*t*t*t + b;
@@ -411,17 +410,18 @@
 
     });
 
-})(jQuery);
-!function() {
-  if (document.getElementsByClassName('engine')[0] != null) {
-	   document.getElementsByClassName('engine')[0].getElementsByTagName('a')[0].removeAttribute('rel');
-  }
+}
 
-    if(!document.getElementById('top-1')) {
-        var e = document.createElement("section");
-        e.id = "top-1";
-        e.className = "engine";
-        e.innerHTML = '<a href="https://mobirise.com">mobirise.com</a> Mobirise v2.9';
-        document.body.insertBefore(e, document.body.childNodes[0]);
-    }
-}();
+// !function() {
+//   if (document.getElementsByClassName('engine')[0] != null) {
+// 	   document.getElementsByClassName('engine')[0].getElementsByTagName('a')[0].removeAttribute('rel');
+//   }
+
+//     if(!document.getElementById('top-1')) {
+//         var e = document.createElement("section");
+//         e.id = "top-1";
+//         e.className = "engine";
+//         e.innerHTML = '<a href="https://mobirise.com">mobirise.com</a> Mobirise v2.9';
+//         document.body.insertBefore(e, document.body.childNodes[0]);
+//     }
+// }();

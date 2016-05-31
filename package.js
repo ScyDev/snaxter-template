@@ -47,54 +47,54 @@ Package.onUse(function(api) {
   api.addFiles('client/routing/routing.js', 'client'); // this needs to be here. doesn't work further down. why?
 
   // apparently it's important that these come after template
-  api.addAssets('client/templates/snaxterLayout/assets/images/hintergrund-homepage-neu-2000x1050-13-1400x735-28.png', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/hintergrund-homepage-neu-2000x1050-13.png', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-26.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-52.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-54.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-56.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/icon-inkl-rand-827x827-31.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/socialmedia-1920x1357-31-1920x1357-44.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-59-1900x1250-70.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-59.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-84.jpg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/images/zuckerrohr-dunkel-1920x579-39.png', 'client');
-
-  api.addAssets('client/templates/snaxterLayout/assets/socicon/fonts/socicon.woff', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/socicon/fonts/socicon.ttf', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/socicon/fonts/socicon.eot', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/socicon/fonts/socicon.svg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.eot', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.woff', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.svg', 'client');
-  api.addAssets('client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2', 'client');
-
   // http://stackoverflow.com/questions/24143504/meteor-package-how-to-add-static-files
+  api.addAssets([
+    'client/templates/snaxterLayout/assets/images/hintergrund-homepage-neu-2000x1050-13-1400x735-28.png',
+    'client/templates/snaxterLayout/assets/images/hintergrund-homepage-neu-2000x1050-13.png',
+    'client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-26.jpg',
+    'client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-52.jpg',
+    'client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-54.jpg',
+    'client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-56.jpg',
+    'client/templates/snaxterLayout/assets/images/icon-inkl-rand-827x827-31.jpg',
+    'client/templates/snaxterLayout/assets/images/socialmedia-1920x1357-31-1920x1357-44.jpg',
+    'client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-59-1900x1250-70.jpg',
+    'client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-59.jpg',
+    'client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-84.jpg',
+    'client/templates/snaxterLayout/assets/images/zuckerrohr-dunkel-1920x579-39.png',
+
+    'client/templates/snaxterLayout/assets/socicon/fonts/socicon.woff',
+    'client/templates/snaxterLayout/assets/socicon/fonts/socicon.ttf',
+    'client/templates/snaxterLayout/assets/socicon/fonts/socicon.eot',
+    'client/templates/snaxterLayout/assets/socicon/fonts/socicon.svg',
+    'client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.eot',
+    'client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf',
+    'client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.woff',
+    'client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.svg',
+    'client/templates/snaxterLayout/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2',
+
+    'client/templates/snaxterLayout/assets/jquery-placeholder/jquery.placeholder.min.js',
+
+    'client/templates/snaxterLayout/assets/formoid/formoid.min.js',
+
+    'client/templates/snaxterLayout/ie-css-hacks.css',
+  ], 'client' );
+  
   api.addFiles([
-      'client/templates/snaxterLayout/assets/socicon/css/socicon.min.css',
-      'client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css',
-      'client/templates/snaxterLayout/assets/mobirise/css/style.css',
-      'client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css',
-    ],
-    'client',
-    {}
-    //{isAsset: true}
-  );
-  //api.addFiles('client/templates/snaxterLayout/assets/animate.css/animate.min.css', 'client', {isAsset: true});
-
-  api.addFiles('client/templates/snaxterLayout/assets/jquery-placeholder/jquery.placeholder.min.js', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/mobirise/js/script.js', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/web/assets/jquery/jquery.min.js', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/bootstrap/js/bootstrap.min.js', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/formoid/formoid.min.js', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/jarallax/jarallax.js', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/assets/smooth-scroll/SmoothScroll.js', 'client', {isAsset: true});
-
-  api.addFiles('client/templates/snaxterLayout/ie-css-hacks.css', 'client', {isAsset: true});
-  api.addFiles('client/templates/snaxterLayout/ie-css-hacks-10-up.css', 'client');
-
-  api.addFiles('client/templates/snaxterLayout/snaxterLayout.less', 'client');
+    'client/templates/snaxterLayout/assets/socicon/css/socicon.min.css',
+    'client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css',
+    'client/templates/snaxterLayout/assets/mobirise/css/style.css',
+    'client/templates/snaxterLayout/assets/bootstrap/css/bootstrap.min.css',
+    // 'client/templates/snaxterLayout/assets/animate.css/animate.min.css',
+    'client/templates/snaxterLayout/ie-css-hacks-10-up.css',
+    'client/templates/snaxterLayout/snaxterLayout.less',
+    'client/templates/snaxterLayout/fixes.css',
+    
+    // 'client/templates/snaxterLayout/assets/bootstrap/js/bootstrap.min.js',
+    'client/templates/snaxterLayout/assets/smooth-scroll/SmoothScroll.js',
+    'client/templates/snaxterLayout/assets/jarallax/jarallax.js',
+    'client/templates/snaxterLayout/assets/mobirise/js/script.js',
+    // 'client/templates/snaxterLayout/assets/formoid/formoid.min.js',
+  ], 'client');
 
   api.addFiles('server/register.js', 'server');
   api.addFiles('server/methods/accounts.js', 'server');
