@@ -20,7 +20,7 @@ Template.coreLayout.onCreated(function(){
     Tracker.autorun(function() {
       var routeName = ReactionRouter.getRouteName();
       // console.log("Current route name is: ", routeName);
-      Meteor.setTimeout(function() { window.initParallaxEtc();console.log("Current route name is: "); }, 200);
+      Meteor.setTimeout(function() { window.initParallaxEtc(); }, 200);
     });
   }
 );
