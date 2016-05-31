@@ -12,18 +12,17 @@ Template.snaxterLayout.inheritsHooksFrom(["coreLayout"]);
 */
 Template.snaxterLayout.replaces("coreLayout");
 
-Template.coreLayout.onRendered(function(){
-  window.initParallaxEtc();
-});
+// Template.coreLayout.onRendered(function(){
+//   window.initParallaxEtc();
+// });
 
-Template.coreLayout.onCreated(function(){
-    Tracker.autorun(function() {
-      var routeName = ReactionRouter.getRouteName();
-      // console.log("Current route name is: ", routeName);
-      Meteor.setTimeout(function() { window.initParallaxEtc(); }, 200);
-    });
-  }
-);
+Template.coreLayout.onCreated(() => {
+  Tracker.autorun(() => {
+    ReactionRouter.watchPathChange();
+    /* Wait a bit to let the Template finish rendering */
+    Meteor.setTimeout(() => window.initParallaxEtc(), 300);
+  });
+});
 
 
 Template.coreLayout.helpers( // if using to replace a template
