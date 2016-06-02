@@ -106,7 +106,11 @@ Template.coreLayout.helpers( // if using to replace a template
     showDisconnectionMessage: function() {
       var now = moment();
       if  (now.diff(this.firedAt, 'seconds') > 20 || this.firedAt == null) {
-        alert("You lost the connection!");
+        Alerts.alert({
+          title: i18next.t("app.offline", "No Connection"),
+          text: i18next.t("app.appIsOffline", "You lost the connection!"),
+          type: "info",
+        });
       }
       this.firedAt = moment();
     }
