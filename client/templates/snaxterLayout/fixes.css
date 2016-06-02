@@ -1,0 +1,5 @@
+.mbr-figure iframe,
+.mbr-figure__img,
+.mbr-figure__map {
+  max-height: 307px;
+}

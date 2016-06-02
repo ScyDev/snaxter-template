@@ -3,7 +3,7 @@ Template.snaxterHead.inheritsHelpersFrom(["coreHead"]);
 Template.snaxterHead.inheritsEventsFrom(["coreHead"]);
 Template.snaxterHead.inheritsHooksFrom(["coreHead"]);
 */
-Template.snaxterHead.replaces("coreHead");
+// Template.snaxterHead.replaces("coreHead");
 
 /*
 Template.snaxterLayout.inheritsHelpersFrom(["coreLayout"]);
@@ -12,19 +12,17 @@ Template.snaxterLayout.inheritsHooksFrom(["coreLayout"]);
 */
 Template.snaxterLayout.replaces("coreLayout");
 
-Template.snaxterLayout.onRendered(function(){
-  }
-);
+// Template.coreLayout.onRendered(function(){
+//   window.initParallaxEtc();
+// });
 
-Template.coreLayout.onCreated(function(){
-  /*
-    Tracker.autorun(function() {
-      var routeName = ReactionRouter.getRouteName();
-      console.log("Current route name is: ", routeName);
-    });
-    */
-  }
-);
+Template.coreLayout.onCreated(() => {
+  Tracker.autorun(() => {
+    ReactionRouter.watchPathChange();
+    /* Wait a bit to let the Template finish rendering */
+    Meteor.setTimeout(() => window.initParallaxEtc(), 300);
+  });
+});
 
 
 Template.coreLayout.helpers( // if using to replace a template
@@ -34,7 +32,7 @@ Template.coreLayout.helpers( // if using to replace a template
       return "/packages/scydev_snaxter-template/client/templates/snaxterLayout/"+relativeUrl;
     },
     showStartPageLayout: function() {
-      return false; // because for the moment we have a separate static start page
+      //return false; // because for the moment we have a separate static start page
 
       var routeName = ReactionRouter.getRouteName();
       //console.log("Current route name is: ", routeName);

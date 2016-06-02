@@ -208,30 +208,26 @@ div.product-variants .form-control {
   text-overflow: ellipsis;
 }
 
-
-
 .product-list h3 {
   text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-}
-
-.product-list .table.table-hover{
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.product-list .table.table-hover td{
-  max-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .title h1 .product-detail-field.title {
   word-wrap: break-word;
+}
+
+p.textForSpinner {
+  padding-top: 45px;
+  font-size: 3rem;
+  color: #ABABAB;
+}
+
+div.spinnerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
 }
 
 .rui.tagnav .navbar-items {
@@ -241,4 +237,24 @@ div.product-variants .form-control {
 #addressBookAddForm .row:first-child .form-group:first-child,
 #addressBookEditForm .row:first-child .form-group:first-child { /* hide country */
   display: none;
+}
+
+.product-grid-item .for-sale-on-date,
+.product-grid-item .location-text,
+.product-grid-item .inventory-text {
+  text-align: left;
+}
+
+.product-grid-item .info-icon {
+  padding-top: 4px;
+  width: 20px;
+  float: left;
+}
+
+.product-grid-item .info-text {
+  padding-left: 20px;
+}
+
+.product-grid-item .currency-symbol {
+  font-size: 18px;
 }

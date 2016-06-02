@@ -1,31 +1,21 @@
-<template name="snaxterHead">
-  <head>
-    <title>snaxter - hausgemacht rockt</title>
-    <!--<title>{{metaData.name}} | {{metaData.title}}</title>-->
-    {{#each metaData.meta}}
-      <meta name="{{name}}" content="{{content}}">
-    {{/each}}
+<head>
+  <title>snaxter - Hausgemacht rockt</title>
 
-    <!-- Site made with Mobirise Website Builder v2.9, https://mobirise.com -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v2.9, mobirise.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{ urlFor 'assets/images/icon-inkl-rand-827x827-31.jpg' }}" type="image/x-icon">
-    <meta name="description" content="hausgemachtes aus deinem quartier">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+  <!-- Site made with Mobirise Website Builder v2.9, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v2.9, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{{ urlFor 'assets/images/icon-inkl-rand-827x827-31.jpg' }}" type="image/x-icon">
+  <meta name="description" content="hausgemachtes aus deinem quartier">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/packages/scydev_snaxter-template/client/templates/snaxterLayout/ie-css-hacks.css" />
+<![endif]-->
+</head>
 
-    <!-- Paste any valid HTML code here. The code will be inserted to the end of <head> section, right before </head> -->
-  </head>
-</template>
 
 <template name="snaxterLayout">
-<!--
-  <link rel="stylesheet" href="{{ urlFor 'assets/bootstrap/css/bootstrap.min.css' }}">
-  <link rel="stylesheet" href="{{ urlFor 'assets/socicon/css/socicon.min.css' }}">
-  <link rel="stylesheet" href="{{ urlFor 'assets/mobirise/css/style.css' }}">
-  <link rel="stylesheet" href="{{ urlFor 'assets/mobirise/css/mbr-additional.css' }}" type="text/css">
--->
   {{#if hasDashboardAccess}}
     {{> coreAdminLayout}}
   {{else}}
@@ -99,25 +89,6 @@
 
 
               <br />
-
-              {{# if showStartPageLayout }}
-
-                <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
-                  <div class="mbr-header mbr-header--center mbr-header--std-padding">
-                    <h2 class="mbr-header__text">wir starten am 02.Mai.<br>registriere dich schon jetzt und sei beim start dabei!</h2>
-                  </div>
-                  <div data-form-alert="true">
-                    <div class="hide" data-form-alert-success="true">vielen dank. wir halten dich auf dem laufenden.</div>
-                  </div>
-                  <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="wir starten am 02.Mai.registriere dich schon jetzt und sei beim start dabei!">
-                    <input type="hidden" value="Dbxg0/CDiED26RKppminKN+/7A9D7snhk1QTiNmjQ65ydxt8D2gVBi0acM1gf95Qaha54pGtedHKLQyQrKgG9NYZzyazlIeFtuULY4ThYo3Yv6Y9bo1T9DXwJw9FkB6h" data-form-email="true">
-                      <div class="mbr-form__left">
-                        <input type="email" class="form-control" name="email" required="" placeholder="gib deine email adresse ein..." data-form-field="Email">
-                      </div>
-                      <div class="mbr-form__right mbr-buttons mbr-buttons--no-offset mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-success">und los!</button></div>
-                  </form>
-                </div>
-              {{/if}}
 
             </div>
           </div>
@@ -410,21 +381,10 @@
     </div>
   </section>
 
-<!-- don't need fancy dynamic effects for this minimal template frame
-  <script src="{{ urlFor 'assets/web/assets/jquery/jquery.min.js' }}"></script>
-  <script src="{{ urlFor 'assets/smooth-scroll/SmoothScroll.js' }}"></script>
-  <!- -[if lte IE 9]>
+  <!--[if lte IE 9]>
     <script src="{{ urlFor 'assets/jquery-placeholder/jquery.placeholder.min.js' }}"></script>
-  <![endif]- ->
-  <script src="{{ urlFor 'assets/jarallax/jarallax.js' }}"></script>
--->
-<script src="{{ urlFor 'assets/mobirise/js/script.js' }}"></script>
-<script src="{{ urlFor 'assets/formoid/formoid.min.js' }}"></script>
+  <![endif]-->
+  <script src="{{ urlFor 'assets/formoid/formoid.min.js' }}"></script>
 
-<!--[if IE]>
-	<link rel="stylesheet" type="text/css" href="/packages/scydev_snaxter-template/client/templates/snaxterLayout/ie-css-hacks.css" />
-<![endif]-->
-
-  <!-- Paste any valid HTML code here. The code will be inserted to the end of <body> section, right before </body> -->
   {{/if}}
 </template>
