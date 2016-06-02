@@ -102,7 +102,23 @@ Template.coreLayout.helpers( // if using to replace a template
           return true;
         }
       }
-
     },
+    showDisconnectionMessage: function() {
+      var now = moment();
+      if  (now.diff(this.firedAt, 'seconds') > 20 || this.firedAt == null) {
+        alert("You lost the connection!");
+      }
+      this.firedAt = moment();
+    }
   }
 );
+
+
+Template.registerHelper('isDisconnected', function() {
+  if(Meteor.status().status === "connected") {
+    return false;
+  }
+  else {
+    return true;
+  }
+});
