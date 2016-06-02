@@ -105,14 +105,20 @@ Template.coreLayout.helpers( // if using to replace a template
     },
     showDisconnectionMessage: function() {
       var now = moment();
+      var offlineMessage = i18next.t("app.appIsOffline", "You lost the connection");
       if  (now.diff(this.firedAt, 'seconds') > 20 || this.firedAt == null) {
         Alerts.alert({
           title: i18next.t("app.offline", "No Connection"),
           text: i18next.t("app.appIsOffline", "You lost the connection!"),
           type: "info",
         });
+        Alerts.inline(offlineMessage, "error", {
+          placement: "connectionStatus",
+          alertsLimit: 1,
+          i18nKey: "app.appIsOffline"
+        });
+        this.firedAt = moment();
       }
-      this.firedAt = moment();
     }
   }
 );
@@ -120,6 +126,7 @@ Template.coreLayout.helpers( // if using to replace a template
 
 Template.registerHelper('isDisconnected', function() {
   if(Meteor.status().status === "connected") {
+    Alerts.removeSeen();
     return false;
   }
   else {

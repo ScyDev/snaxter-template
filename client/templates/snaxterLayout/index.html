@@ -85,15 +85,9 @@
                 
                 <main role="main" id="main">
                   {{#if isDisconnected}}
-                  {{ showDisconnectionMessage }}
-                  <span id="connectionStatus">{{> inlineAlerts placement="index"}}</span>
-                  <div class="alert alert-danger alert-dismissable" style="display: block;">
-                        <!--suppress CheckDtdReferences -->
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>  
-                      {{ i18n 'app.appIsOffline' 'Du bist zu Zeit offline'}}      
-                    </div>
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                {{/if}}
+                    {{> inlineAlerts placement="connectionStatus"}}
+                    {{ showDisconnectionMessage }}
+                  {{/if}}
                   
                   <span id="layout-alerts">{{> inlineAlerts}}</span>
                   {{#if hasPermission 'guest'}}
