@@ -19,7 +19,6 @@
   {{#if hasDashboardAccess}}
     {{> coreAdminLayout}}
   {{else}}
-
     <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse" id="menu-0">
       <div class="mbr-navbar__section mbr-section">
         <div class="mbr-section__container container">
@@ -71,8 +70,14 @@
                 <nav class="reaction-cart-drawer">
                   {{>cartDrawer}}
                 </nav>
-
+                
+                
                 <main role="main" id="main">
+                  {{#if isDisconnected}}
+                    {{> inlineAlerts placement="connectionStatus"}}
+                    {{ showDisconnectionMessage }}
+                  {{/if}}
+                  
                   <span id="layout-alerts">{{> inlineAlerts}}</span>
                   {{#if hasPermission 'guest'}}
 
