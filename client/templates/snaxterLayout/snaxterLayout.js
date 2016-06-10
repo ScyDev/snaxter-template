@@ -68,13 +68,25 @@ Template.coreLayout.helpers( // if using to replace a template
   }
 );
 
-
 Template.registerHelper('isDisconnected', function() {
   if(Meteor.status().status === "connected") {
+    if (this.reconnectionInterval != null) {
+      Meteor.clearInterval(this.reconnectionInterval);
+    }
     Alerts.removeSeen();
     return false;
   }
   else {
+    if (this.reconnectionInterval == null) {
+      this.reconnectionInterval = Meteor.setInterval(
+        function() {
+          console.log("trying to reconnect ... ");
+          Meteor.reconnect();
+        },
+        5000
+      );
+    }
+
     return true;
   }
 });
