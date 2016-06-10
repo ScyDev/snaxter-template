@@ -58,6 +58,7 @@ Template.coreLayout.helpers( // if using to replace a template
         });
         Alerts.inline(offlineMessage, "error", {
           placement: "connectionStatus",
+          dismissable: false,
           alertsLimit: 1,
           i18nKey: "app.appIsOffline"
         });
