@@ -1123,6 +1123,9 @@ html {
 .mbr-social-icons__icon:hover {
   color: #fff;
 }
+.mbr-social-icons--style-1 {
+  text-align: center;
+}
 .mbr-social-icons--style-1 .mbr-social-icons__icon:hover {
   background: #252525 !important;
 }
