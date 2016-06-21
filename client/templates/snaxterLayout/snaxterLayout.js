@@ -36,8 +36,9 @@ Template.coreLayout.helpers( // if using to replace a template
 
       var routeName = ReactionRouter.getRouteName();
       //console.log("Current route name is: ", routeName);
+      //console.log("Current route name is: ", ReactionRouter.current());
 
-      return (routeName != null && routeName == "index");
+      return (routeName != null && (routeName == "index" || ReactionRouter.current().path.indexOf("/tag/") > 0 ));
     },
     hostname: function() {
       let rootUrl = Meteor.absoluteUrl();
