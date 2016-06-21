@@ -49,19 +49,12 @@ Package.onUse(function(api) {
   // apparently it's important that these come after template
   // http://stackoverflow.com/questions/24143504/meteor-package-how-to-add-static-files
   api.addAssets([
-    'client/templates/snaxterLayout/assets/images/hintergrund-homepage-neu-2000x1050-13-1400x735-28.png',
-    'client/templates/snaxterLayout/assets/images/hintergrund-homepage-neu-2000x1050-13.png',
-    'client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-26.jpg',
-    'client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-52.jpg',
-    'client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-54.jpg',
-    'client/templates/snaxterLayout/assets/images/holz-hintergrund-buche-5515-1900x1260-56.jpg',
-    'client/templates/snaxterLayout/assets/images/icon-inkl-rand-827x827-31.jpg',
-    'client/templates/snaxterLayout/assets/images/socialmedia-1920x1357-31-1920x1357-44.jpg',
-    'client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-59-1900x1250-70.jpg',
-    'client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-59.jpg',
-    'client/templates/snaxterLayout/assets/images/wandtafel-1900x1250-29-1900x1250-84.jpg',
-    'client/templates/snaxterLayout/assets/images/zuckerrohr-dunkel-1920x579-39.png',
-
+    'client/templates/snaxterLayout/assets/images/snaxter_hintergrund.png',
+    'client/templates/snaxterLayout/assets/images/holz.jpg',
+    'client/templates/snaxterLayout/assets/images/snaxter_icon.jpg',
+    'client/templates/snaxterLayout/assets/images/wandtafel.jpg',
+    'client/templates/snaxterLayout/assets/images/zuckerrohr.png',
+    
     'client/templates/snaxterLayout/assets/socicon/fonts/socicon.woff',
     'client/templates/snaxterLayout/assets/socicon/fonts/socicon.ttf',
     'client/templates/snaxterLayout/assets/socicon/fonts/socicon.eot',
@@ -78,7 +71,7 @@ Package.onUse(function(api) {
 
     'client/templates/snaxterLayout/ie-css-hacks.css',
   ], 'client' );
-  
+
   api.addFiles([
     'client/templates/snaxterLayout/assets/socicon/css/socicon.min.css',
     'client/templates/snaxterLayout/assets/mobirise/css/mbr-additional.css',
@@ -88,7 +81,7 @@ Package.onUse(function(api) {
     'client/templates/snaxterLayout/ie-css-hacks-10-up.css',
     'client/templates/snaxterLayout/snaxterLayout.less',
     'client/templates/snaxterLayout/fixes.css',
-    
+
     // 'client/templates/snaxterLayout/assets/bootstrap/js/bootstrap.min.js',
     'client/templates/snaxterLayout/assets/smooth-scroll/SmoothScroll.js',
     'client/templates/snaxterLayout/assets/jarallax/jarallax.js',

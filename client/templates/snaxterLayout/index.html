@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v2.9, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="{{ urlFor 'assets/images/icon-inkl-rand-827x827-31.jpg' }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ urlFor 'assets/images/snaxter_icon.jpg' }}" type="image/x-icon">
   <meta name="description" content="hausgemachtes aus deinem quartier">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
 <!--[if IE]>
@@ -26,9 +26,8 @@
             <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
               <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
                 <span class="mbr-brand__logo">
-                    <img class="mbr-navbar__brand-img mbr-brand__img" src="{{ urlFor 'assets/images/icon-inkl-rand-827x827-31.jpg' }}" title="snaxter">
+                    <img class="mbr-navbar__brand-img mbr-brand__img" src="{{ urlFor 'assets/images/snaxter_icon.jpg' }}" title="snaxter">
                 </span>
-
               </span>
             </div>
 
@@ -53,13 +52,44 @@
       </div>
     </section>
 
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-para___llax-background mbr-after-navbar" id="form2-6" style="background-repeat: repeat; background-image: url({{ urlFor 'assets/images/holz-hintergrund-buche-5515-1900x1260-56.jpg' }});">
+    {{# if showStartPageLayout }}
 
+      <section class="mbr-section mbr-section--relative mbr-parallax-background" id="msg-box4-10" style="background-image: url({{ urlFor 'assets/images/wandtafel.jpg' }});">
+      <div class="mbr-section__container mbr-section__container--sm-padding container">
+          <div class="row">
+            <br><br><br><br>
+              <div class="mbr-box mbr-box--fixed mbr-box--adapted">
+                  <div class="mbr-box__magnet mbr-box__magnet--top-right mbr-section__left col-sm-6">
+                      <figure class="mbr-figure mbr-figure--adapted mbr-figure--caption-inside-bottom mbr-figure--full-width"><img class="mbr-figure__img" src="{{ urlFor 'assets/images/snaxter_hintergrund.png' }}"></figure>
+                  </div>
+                  <div class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 mbr-section__right">
+                      <div class="mbr-section__container mbr-section__container--middle">
+                          <div class="mbr-header mbr-header--auto-align mbr-header--wysiwyg">
+                              <h3 class="mbr-header__text">Hausgemachtes Essen, frisch zubereitet und bequem in Deiner Nähe?</h3>
+
+                          </div>
+                      </div>
+                      <div class="mbr-section__container mbr-section__container--middle">
+                          <div class="mbr-article mbr-article--auto-align mbr-article--wysiwyg"><p>Snaxter bringt verwöhnte Gaumenfreunde und geschickte Kellenschwinger zusammen. Feines Essen, privat zubereitet und tellerfertig übergeben. Der persönliche Takeaway für frische und abwechslungsreiche Küche die schmeckt!</p></div>
+                      </div>
+                      <div class="mbr-section__container">
+                          <div class="mbr-buttons mbr-buttons--auto-align btn-inverse"><a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#msg-box5-5">Ich esse gerne</a> <a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#msg-box5-4">Ich koche gerne</a>  </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+
+  {{/if}}
+
+
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-para___llax-background mbr-after-navbar" id="form2-6" style="background-repeat: repeat; background-image: url({{ urlFor 'assets/images/holz.jpg' }});">
       <div class="mbr-section__container mbr-section__container--sm-padding container">
         <div class="row">
           <div class="col-sm-12">
             <div class="row">
-
+                <a name="products" id="products-anchor"></a>
 
                 <nav class="reaction-navigation-header">
                   <!-- begin layoutHeader -->
@@ -92,45 +122,20 @@
                   <footer class="reaction-navigation-footer footer-default">{{> Template.dynamic template=layoutFooter}}</footer>
                 </main>
 
-
               <br />
 
             </div>
           </div>
+          <br>
+          <div class="mbr-social-icons mbr-social-icons--style-1 col-sm-12"><a class="mbr-social-icons__icon socicon-bg-twitter" title="Twitter" href="https://twitter.com/snaxter" target="_blank"><i class="socicon socicon-twitter"></i></a> <a class="mbr-social-icons__icon socicon-bg-facebook" title="Facebook" href="https://www.facebook.com/eatsnaxter/?fref=ts" target="_blank"><i class="socicon socicon-facebook"></i></a>  <a class="mbr-social-icons__icon socicon-bg-youtube" title="YouTube" href="https://www.youtube.com/channel/UCfrLZzqQi9lKE2InTwxTLNA" target="_blank"><i class="socicon socicon-youtube"></i></a> <a class="mbr-social-icons__icon socicon-bg-instagram" title="Instagram" href="https://www.instagram.com/eatsnaxter/" target="_blank"><i class="socicon socicon-instagram"></i></a></div>
+
         </div>
       </div>
     </section>
 
     {{# if showStartPageLayout }}
 
-      <section class="mbr-section mbr-section--relative mbr-parallax-background" id="msg-box4-10" style="background-image: url({{ urlFor 'assets/images/wandtafel-1900x1250-29-1900x1250-84.jpg' }});">
-      <div class="mbr-section__container mbr-section__container--isolated container">
-          <div class="row">
-              <div class="mbr-box mbr-box--fixed mbr-box--adapted">
-                  <div class="mbr-box__magnet mbr-box__magnet--top-right mbr-section__left col-sm-6">
-                      <figure class="mbr-figure mbr-figure--adapted mbr-figure--caption-inside-bottom mbr-figure--full-width"><img class="mbr-figure__img" src="{{ urlFor 'assets/images/hintergrund-homepage-neu-2000x1050-13.png' }}"></figure>
-                  </div>
-                  <div class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 mbr-section__right">
-                      <div class="mbr-section__container mbr-section__container--middle">
-                          <div class="mbr-header mbr-header--auto-align mbr-header--wysiwyg">
-                              <h3 class="mbr-header__text">hausgemachtes essen, frisch zubereitet und bequem in deiner nähe?</h3>
-
-                          </div>
-                      </div>
-                      <div class="mbr-section__container mbr-section__container--middle">
-                          <div class="mbr-article mbr-article--auto-align mbr-article--wysiwyg"><p>Snaxter bringt verwöhnte Gaumenfreunde und geschickte Kellenschwinger zusammen. Feines Essen, privat zubereitet und tellerfertig übergeben. Der persönliche Takeaway für frische und abwechslungsreiche Küche die schmeckt!</p></div>
-                      </div>
-                      <div class="mbr-section__container">
-                          <div class="mbr-buttons mbr-buttons--auto-align btn-inverse"><a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#msg-box5-5">ich esse gerne</a> <a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#msg-box5-4">ich koche gerne</a>  </div>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-      </section>
-
-      <section class="mbr-section mbr-section--relative mbr-parallax-background" id="msg-box5-5" style="background-image: url({{ urlFor 'assets/images/holz-hintergrund-buche-5515-1900x1260-54.jpg' }});">
+      <section class="mbr-section mbr-section--relative mbr-parallax-background" id="msg-box5-5" style="background-image: url({{ urlFor 'assets/images/wandtafel.jpg' }});">
 
       <div class="mbr-section__container mbr-section__container--isolated container">
           <div class="row">
@@ -139,7 +144,7 @@
                   <div class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 mbr-section__left">
                       <div class="mbr-section__container mbr-section__container--middle">
                           <div class="mbr-header mbr-header--auto-align mbr-header--wysiwyg">
-                              <h3 class="mbr-header__text">du suchst ein feines z'mittag?<br>so funktioniert's!</h3>
+                              <h3 class="mbr-header__text">Du suchst ein feines z'Mittag?<br>So funktioniert's!</h3>
 
                           </div>
                       </div>
@@ -147,7 +152,7 @@
                           <div class="mbr-article mbr-article--auto-align mbr-article--wysiwyg"><h2><span style="font-weight: normal;">Einfach als Geniesser registrieren und die 5 Schritte im Video befolgen.</span></h2><p><br></p><h2>hausgemacht | abwechslungsreich | lokal</h2></div>
                       </div>
                       <div class="mbr-section__container">
-                          <div class="mbr-buttons mbr-buttons--auto-align btn-inverse"><a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#content4-27">warum sollte ich?</a> </div>
+                          <div class="mbr-buttons mbr-buttons--auto-align btn-inverse"><a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#content4-27">Warum sollte ich?</a> </div>
                       </div>
                   </div>
                   <div class="mbr-box__magnet mbr-box__magnet--top-left mbr-section__right col-sm-6">
@@ -158,31 +163,7 @@
       </div>
     </section>
 
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="content5-15" style="background-image: url({{ urlFor 'assets/images/zuckerrohr-dunkel-1920x579-39.png' }});">
-
-      <div class="mbr-section__container container mbr-section__container--first">
-          <div class="mbr-header mbr-header--wysiwyg row">
-              <div class="col-sm-8 col-sm-offset-2">
-                  <h3 class="mbr-header__text">nachhaltiger takeaway</h3>
-
-              </div>
-          </div>
-      </div>
-      <div class="mbr-section__container container mbr-section__container--middle">
-          <div class="row">
-              <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2"><h3><span style="font-weight: normal;">Wegwerfbehälter nerven! Richtig. Deshalb verwenden die Köche von snaxter ausschliesslich Biobehälter aus Zuckerrohrmasse. Um auch mehrere Portionen einfach zu transportieren, gibt es wiederverwendbare Tragtaschen aus zertifizierter nachhaltiger Forstwirtschaft (FSC). Wir setzen auf lokale Partner und programmieren in der Schweiz.</span></h3></div>
-          </div>
-      </div>
-      <div class="mbr-section__container container mbr-section__container--last">
-          <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                  <div class="mbr-buttons mbr-buttons--center btn-inverse"><a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#msg-box4-20">wer steckt hinter snaxter?</a></div>
-              </div>
-          </div>
-      </div>
-    </section>
-
-    <section class="mbr-section mbr-section--relative mbr-parallax-background" id="msg-box5-4" style="background-image: url({{ urlFor 'assets/images/holz-hintergrund-buche-5515-1900x1260-26.jpg' }});">
+    <section class="mbr-section mbr-section--relative mbr-parallax-background" id="msg-box5-4" style="background-image: url({{ urlFor 'assets/images/holz.jpg' }});">
 
       <div class="mbr-section__container mbr-section__container--isolated container">
           <div class="row">
@@ -193,7 +174,7 @@
                   <div class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 mbr-section__right">
                       <div class="mbr-section__container mbr-section__container--middle">
                           <div class="mbr-header mbr-header--auto-align mbr-header--wysiwyg">
-                              <h3 class="mbr-header__text">du kochst gerne?&nbsp;<br>so funktioniert's!</h3>
+                              <h3 class="mbr-header__text">Du kochst gerne?&nbsp;<br>So funktioniert's!</h3>
 
                           </div>
                       </div>
@@ -201,7 +182,7 @@
                           <div class="mbr-article mbr-article--auto-align mbr-article--wysiwyg"><h2><span style="font-weight: normal;">Einfach als Koch anmelden und die 6 Schritte im Video befolgen.</span></h2><p><br></p><h2>unkompliziert | selbständig | flexibel</h2></div>
                       </div>
                       <div class="mbr-section__container">
-                          <div class="mbr-buttons mbr-buttons--auto-align btn-inverse"> <a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#content4-27">warum sollte ich?</a></div>
+                          <div class="mbr-buttons mbr-buttons--auto-align btn-inverse"> <a class="mbr-buttons__btn btn btn-lg btn-success" href="index.html#content4-27">Warum sollte ich?</a></div>
                       </div>
                   </div>
 
@@ -210,140 +191,116 @@
       </div>
     </section>
 
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="content4-27" style="background-image: url({{ urlFor 'assets/images/wandtafel-1900x1250-29-1900x1250-59.jpg' }});">
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="content4-27" style="background-image: url({{ urlFor 'assets/images/wandtafel.jpg' }});">
 
-      <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container">
-          <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
-              <div class="col-sm-8 col-sm-offset-2">
-                  <h3 class="mbr-header__text">es gibt gute gründe für snaxter</h3>
+        <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container">
+            <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h3 class="mbr-header__text">Es gibt gute Gründe für snaxter</h3>
 
-              </div>
-          </div>
-      </div>
-      <div class="mbr-section__container container">
-          <div class="mbr-section__row row">
-              <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6">
+                </div>
+            </div>
+        </div>
+        <div class="mbr-section__container container">
+            <div class="mbr-section__row row">
+                <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6">
 
-                  <div class="mbr-section__container mbr-section__container--middle">
-                      <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                          <h3 class="mbr-header__text">hausgemacht rockt</h3>
-                      </div>
-                  </div>
-                  <div class="mbr-section__container mbr-section__container--last">
-                      <div class="mbr-article mbr-article--wysiwyg">
-                          <p>Wir finden es ist Zeit für hausgemachte Gerichte. Mit Freude und frischen Zutaten zubereitet schmeckts halt immer noch am besten.<br>Takeway ja - Fastfood nein!<br></p>
-                      </div>
-                  </div>
+                    <div class="mbr-section__container mbr-section__container--middle">
+                        <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                            <h3 class="mbr-header__text">Hausgemacht rockt</h3>
+                        </div>
+                    </div>
+                    <div class="mbr-section__container mbr-section__container--last">
+                        <div class="mbr-article mbr-article--wysiwyg">
+                            <p>Wir finden es ist Zeit für hausgemachte Gerichte. Mit Freude und frischen Zutaten zubereitet schmeckts halt immer noch am besten.<br>Takeway ja - Fastfood nein!<br></p>
+                        </div>
+                    </div>
 
-              </div>
-              <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6">
+                </div>
+                <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6">
 
-                  <div class="mbr-section__container mbr-section__container--middle">
-                      <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                          <h3 class="mbr-header__text">abwechslungs<br>reich</h3>
-                      </div>
-                  </div>
-                  <div class="mbr-section__container mbr-section__container--last">
-                      <div class="mbr-article mbr-article--wysiwyg">
-                          <p>Abwechslung belebt. Das ist beim Essen nicht anders. Die Köche von snaxter bestimmen selber was auf den Tisch kommt. So kannst du jeden Tag etwas neues probieren.</p>
-                      </div>
-                  </div>
+                    <div class="mbr-section__container mbr-section__container--middle">
+                        <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                            <h3 class="mbr-header__text">Abwechslungs<br>reich</h3>
+                        </div>
+                    </div>
+                    <div class="mbr-section__container mbr-section__container--last">
+                        <div class="mbr-article mbr-article--wysiwyg">
+                            <p>Abwechslung belebt. Das ist beim Essen nicht anders. Die Köche von snaxter bestimmen selber was auf den Tisch kommt. So kannst du jeden Tag etwas neues probieren.</p>
+                        </div>
+                    </div>
 
-              </div>
-              <div class="clearfix visible-sm-block"></div>
-              <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6">
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6">
 
-                  <div class="mbr-section__container mbr-section__container--middle">
-                      <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                          <h3 class="mbr-header__text">lokal</h3>
-                      </div>
-                  </div>
-                  <div class="mbr-section__container mbr-section__container--last">
-                      <div class="mbr-article mbr-article--wysiwyg">
-                          <p>Wohn - und Arbeitsraum liegen immer näher zusammen. Aber nicht jeder kann dort wohnen wo er arbeitet. Da hilft dir snaxter mit einem Mittagessen wie zu hause.<br></p>
-                      </div>
-                  </div>
+                    <div class="mbr-section__container mbr-section__container--middle">
+                        <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                            <h3 class="mbr-header__text">Lokal<br><br></h3>
+                        </div>
+                    </div>
+                    <div class="mbr-section__container mbr-section__container--last">
+                        <div class="mbr-article mbr-article--wysiwyg">
+                            <p>Wohn- und Arbeitsraum liegen immer näher zusammen. Aber nicht jeder kann dort wohnen wo er arbeitet. Da hilft dir snaxter mit einem Mittagessen wie zu Hause.<br></p>
+                        </div>
+                    </div>
 
-              </div>
-              <div class="clearfix visible-md-block"></div>
-              <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6 col-lg-offset-0 col-md-offset-2">
+                </div>
+                <div class="clearfix visible-md-block"></div>
+                <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6 col-lg-offset-0 col-md-offset-2">
 
-                  <div class="mbr-section__container mbr-section__container--middle">
-                      <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                          <h3 class="mbr-header__text"><p>nachhaltig<br></p></h3>
-                      </div>
-                  </div>
-                  <div class="mbr-section__container mbr-section__container--last">
-                      <div class="mbr-article mbr-article--wysiwyg">
-                          <p>Etwas feines auf einer Parkbank geniessen - ohne schlechtes gewissen wegen der Plastikverpackung. snaxter setzt auf ökologisch nachhaltiges Geschirr.</p>
-                      </div>
-                  </div>
+                    <div class="mbr-section__container mbr-section__container--middle">
+                        <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                            <h3 class="mbr-header__text">Nachhaltig<br><br></h3>
+                        </div>
+                    </div>
+                    <div class="mbr-section__container mbr-section__container--last">
+                        <div class="mbr-article mbr-article--wysiwyg">
+                            <p>Etwas feines auf einer Parkbank geniessen - ohne schlechtes Gewissen wegen der Plastikverpackung. snaxter setzt auf ökologisch nachhaltiges Geschirr.</p>
+                        </div>
+                    </div>
 
-              </div>
-              <div class="clearfix visible-sm-block"></div>
-              <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="mbr-section__col col-xs-12 col-lg-2-4 col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
 
-                  <div class="mbr-section__container mbr-section__container--middle">
-                      <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                          <h3 class="mbr-header__text">fair</h3>
-                      </div>
-                  </div>
-                  <div class="mbr-section__container mbr-section__container--last">
-                      <div class="mbr-article mbr-article--wysiwyg">
-                          <p>Die Preise und das Angebot bestimmt jeder Koch selbst. Wenn dir das Essen geschmeckt hat, dann gib dem Koch auch ein paar Sterne. Er wird sich freuen.&nbsp;</p>
-                      </div>
-                  </div>
+                    <div class="mbr-section__container mbr-section__container--middle">
+                        <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                            <h3 class="mbr-header__text">Fair<br><br></h3>
+                        </div>
+                    </div>
+                    <div class="mbr-section__container mbr-section__container--last">
+                        <div class="mbr-article mbr-article--wysiwyg">
+                            <p>Die Preise und das Angebot bestimmt jeder Koch selbst. Wenn dir das Essen geschmeckt hat, dann gib dem Koch auch ein paar Sterne. Er wird sich freuen.&nbsp;</p>
+                        </div>
+                    </div>
 
-              </div>
+                </div>
 
-          </div>
-      </div>
+            </div>
+        </div>
     </section>
 
-    <section class="mbr-section mbr-section--relative mbr-parallax-background" id="msg-box4-20" style="background-image: url({{ urlFor 'assets/images/holz-hintergrund-buche-5515-1900x1260-52.jpg' }});">
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="content5-15" style="background-image: url({{ urlFor 'assets/images/zuckerrohr.png' }});">
 
-      <div class="mbr-section__container mbr-section__container--isolated container">
-          <div class="row">
-              <div class="mbr-box mbr-box--fixed mbr-box--adapted">
-                  <div class="mbr-box__magnet mbr-box__magnet--top-right mbr-section__left col-sm-6">
-                      <figure class="mbr-figure mbr-figure--adapted mbr-figure--caption-inside-bottom mbr-figure--full-width"><img class="mbr-figure__img" src="{{ urlFor 'assets/images/hintergrund-homepage-neu-2000x1050-13-1400x735-28.png' }}"></figure>
-                  </div>
-                  <div class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 mbr-section__right">
-                      <div class="mbr-section__container mbr-section__container--middle">
-                          <div class="mbr-header mbr-header--auto-align mbr-header--wysiwyg">
-                              <h3 class="mbr-header__text">das snaxter team</h3>
+        <div class="mbr-section__container container mbr-section__container--first">
+            <div class="mbr-header mbr-header--wysiwyg row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h3 class="mbr-header__text">Nachhaltiger Takeaway</h3>
 
-                          </div>
-                      </div>
-                      <div class="mbr-section__container mbr-section__container--middle">
-                          <div class="mbr-article mbr-article--auto-align mbr-article--wysiwyg"><p><strong>Thomas</strong> kocht leidenschaftlich und geniesst gutes Essen. Ungesunde Verpflegung ist nicht so sein Ding.</p><p><strong>Joshua</strong> isst gerne währschaft - und kocht auch so. Seine Älplermagronen sind fast schon legendär.</p><p><strong>Lukas </strong>kann sich schwer entscheiden, ob er lieber kocht oder programmiert. Auf jeden fall geniesst er beides.</p><p><br></p><p>Hast auch du Lust bei snaxter mitzuwirken?</p><p>Dann <a href="#bottom" class="text-white">schreib uns</a>, es gibt genug zu tun!</p></div>
-                      </div>
-                      <div class="mbr-section__container">
-                          <div class="mbr-buttons mbr-buttons--auto-align btn-inverse"><a class="mbr-buttons__btn btn btn-lg btn-success" href="#top">ich mache mit!</a></div>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-    </section>
-
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="social-buttons2-10" style="background-image: url({{ urlFor 'assets/images/socialmedia-1920x1357-31-1920x1357-44.jpg' }});">
-
-
-      <div class="mbr-section__container container">
-          <div class="mbr-header mbr-header--inline row">
-              <div class="col-sm-4">
-                  <h3 class="mbr-header__text">folge uns</h3>
-              </div>
-              <div class="mbr-social-icons mbr-social-icons--style-1 col-sm-8"><a class="mbr-social-icons__icon socicon-bg-twitter" title="Twitter" href="https://twitter.com/snaxter" target="_blank"><i class="socicon socicon-twitter"></i></a> <a class="mbr-social-icons__icon socicon-bg-facebook" title="Facebook" href="https://www.facebook.com/eatsnaxter/?fref=ts" target="_blank"><i class="socicon socicon-facebook"></i></a>  <a class="mbr-social-icons__icon socicon-bg-youtube" title="YouTube" href="https://www.youtube.com/channel/UCfrLZzqQi9lKE2InTwxTLNA" target="_blank"><i class="socicon socicon-youtube"></i></a> <a class="mbr-social-icons__icon socicon-bg-instagram" title="Instagram" href="https://www.instagram.com/eatsnaxter/" target="_blank"><i class="socicon socicon-instagram"></i></a>     <a class="mbr-social-icons__icon socicon-bg-linkedin" title="LinkedIn" href="https://www.linkedin.com/company/10532314?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10532314%2Cidx%3A1-1-1%2CtarId%3A1458226991949%2Ctas%3Asnaxter" target="_blank"><i class="socicon socicon-linkedin"></i></a> </div>
-          </div>
-      </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-section__container container mbr-section__container--middle">
+            <div class="row">
+                <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2"><h3><span style="font-weight: normal;">Plastikverpackung nervt! Richtig. Deshalb verwenden die Köche von snaxter ausschliesslich Kartonboxen aus FSC-Papier mit Biowachs-Beschichtung. Um auch mehrere Portionen einfach transportieren zu können, gibt es die wiederverwendbare Tragtasche ebenfalls aus zertifizierter nachhaltiger Forstwirtschaft (FSC). Wir setzen auf lokale Partner und programmieren in der Schweiz.</span></h3></div>
+            </div>
+        </div>
     </section>
 
   {{/if}}
 
-  <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="contacts3-18" style="background-image: url({{ urlFor 'assets/images/wandtafel-1900x1250-29-1900x1250-59-1900x1250-70.jpg' }});">
+  <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="contacts3-18" style="background-image: url({{ urlFor 'assets/images/wandtafel.jpg' }});">
 
     <div class="mbr-section__container container">
         <div class="mbr-contacts mbr-contacts--wysiwyg row">
