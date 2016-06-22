@@ -38,6 +38,15 @@ Template.coreLayout.helpers( // if using to replace a template
 
       return (routeName != null && (routeName == "index" || ReactionRouter.current().path.indexOf("/tag/") > 0 ));
     },
+    showStartPageButtons: function() {
+      var routeName = ReactionRouter.getRouteName();
+
+      if (routeName != null && (routeName == "index")) {
+        return "visible";
+      }
+
+      return "hidden";
+    },
     hostname: function() {
       let rootUrl = Meteor.absoluteUrl();
       //console.log("Meteor.absoluteUrl(): "+rootUrl);
