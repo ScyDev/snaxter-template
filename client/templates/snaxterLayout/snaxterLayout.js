@@ -32,13 +32,20 @@ Template.coreLayout.helpers( // if using to replace a template
       return "/packages/scydev_snaxter-template/client/templates/snaxterLayout/"+relativeUrl;
     },
     showStartPageLayout: function() {
-      //return false; // because for the moment we have a separate static start page
-
       var routeName = ReactionRouter.getRouteName();
       //console.log("Current route name is: ", routeName);
       //console.log("Current route name is: ", ReactionRouter.current());
 
       return (routeName != null && (routeName == "index" || ReactionRouter.current().path.indexOf("/tag/") > 0 ));
+    },
+    showStartPageButtons: function() {
+      var routeName = ReactionRouter.getRouteName();
+
+      if (routeName != null && (routeName == "index")) {
+        return "visible";
+      }
+
+      return "hidden";
     },
     hostname: function() {
       let rootUrl = Meteor.absoluteUrl();
@@ -90,4 +97,27 @@ Template.registerHelper('isDisconnected', function() {
 
     return true;
   }
+});
+
+Template.productDetail.events({
+  "click .some-register-button": function (event, template) {
+    $('.rui.navbar .accounts .dropdown-menu').show();
+    $('a[data-event-action="signUp"]').trigger('click');
+
+    /* these don't work as expected
+    $(".dropdown-toggle").dropdown("toggle");
+    $(".dropdown-toggle").dropdown();
+
+    console.log(".accounts-dropdown: ",$('.accounts-dropdown'));
+    $('.rui.navbar .accounts .accounts-dropdown').addClass('open');
+    template.$('.accounts-dropdown').addClass('open');
+    console.log(".dropdown-toggle: ",$('.dropdown-toggle'));
+    //$('.dropdown-toggle').trigger('click');
+    */
+
+    $('html, body').animate({
+        scrollTop: $("#products-anchor").offset().top
+    }, "fast");
+
+  },
 });
