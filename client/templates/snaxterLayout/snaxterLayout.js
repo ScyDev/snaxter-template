@@ -48,3 +48,26 @@ Template.coreLayout.helpers( // if using to replace a template
     },
   }
 );
+
+Template.productDetail.events({
+  "click .some-register-button": function (event, template) {
+    $('.rui.navbar .accounts .dropdown-menu').show();
+    $('a[data-event-action="signUp"]').trigger('click');
+
+    /* these don't work as expected
+    $(".dropdown-toggle").dropdown("toggle");
+    $(".dropdown-toggle").dropdown();
+
+    console.log(".accounts-dropdown: ",$('.accounts-dropdown'));
+    $('.rui.navbar .accounts .accounts-dropdown').addClass('open');
+    template.$('.accounts-dropdown').addClass('open');
+    console.log(".dropdown-toggle: ",$('.dropdown-toggle'));
+    //$('.dropdown-toggle').trigger('click');
+    */
+
+    $('html, body').animate({
+        scrollTop: $("#products-anchor").offset().top
+    }, "fast");
+
+  },
+});
