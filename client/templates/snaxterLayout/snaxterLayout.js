@@ -58,21 +58,16 @@ Template.coreLayout.helpers( // if using to replace a template
   }
 );
 
-Template.productDetail.events({
+Template.coreLayout.events({
   "click .some-register-button": function (event, template) {
-    $('.rui.navbar .accounts .dropdown-menu').show();
+    // switch to register form
     $('a[data-event-action="signUp"]').trigger('click');
 
-    /* these don't work as expected
-    $(".dropdown-toggle").dropdown("toggle");
-    $(".dropdown-toggle").dropdown();
-
-    console.log(".accounts-dropdown: ",$('.accounts-dropdown'));
-    $('.rui.navbar .accounts .accounts-dropdown').addClass('open');
-    template.$('.accounts-dropdown').addClass('open');
-    console.log(".dropdown-toggle: ",$('.dropdown-toggle'));
-    //$('.dropdown-toggle').trigger('click');
-    */
+    // this works when called from the JS console, but doesn't work when called directly. it's just ognored.
+    // calling it from setTimeout() seems to make the call to appear to come from top level, as if entered by console.
+    window.setTimeout(function() {
+      $(".dropdown-toggle").dropdown("toggle");
+    }, 10);
 
     $('html, body').animate({
         scrollTop: $("#products-anchor").offset().top
