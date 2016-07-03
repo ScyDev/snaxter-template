@@ -59,9 +59,9 @@ Template.coreLayout.helpers( // if using to replace a template
 );
 
 Template.coreLayout.events({
-  "click .some-register-button": function (event, template) {
+  "click .mbr-buttons__link1": function (event, template) {
     // switch to register form
-    $('a[data-event-action="signUp"]').trigger('click');
+    $('a[data-event-action="signIn"]').trigger('click');
 
     // this works when called from the JS console, but doesn't work when called directly. it's just ognored.
     // calling it from setTimeout() seems to make the call to appear to come from top level, as if entered by console.
