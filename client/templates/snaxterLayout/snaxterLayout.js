@@ -24,6 +24,13 @@ Template.coreLayout.onCreated(() => {
   });
 });
 
+function showStartPageContent() {
+  var routeName = ReactionRouter.getRouteName();
+  //console.log("Current route name is: ", routeName);
+  //console.log("Current route name is: ", ReactionRouter.current());
+
+  return (routeName != null && (routeName == "index" || ReactionRouter.current().path.indexOf("/tag/") > 0 ));
+}
 
 Template.coreLayout.helpers( // if using to replace a template
 //Template.snaxterLayout.helpers( // if this template is rendered by a route
@@ -32,16 +39,10 @@ Template.coreLayout.helpers( // if using to replace a template
       return "/packages/scydev_snaxter-template/client/templates/snaxterLayout/"+relativeUrl;
     },
     showStartPageLayout: function() {
-      var routeName = ReactionRouter.getRouteName();
-      //console.log("Current route name is: ", routeName);
-      //console.log("Current route name is: ", ReactionRouter.current());
-
-      return (routeName != null && (routeName == "index" || ReactionRouter.current().path.indexOf("/tag/") > 0 ));
+      return showStartPageContent();
     },
     showStartPageButtons: function() {
-      var routeName = ReactionRouter.getRouteName();
-
-      if (routeName != null && (routeName == "index")) {
+      if (showStartPageContent()) {
         return "visible";
       }
 
