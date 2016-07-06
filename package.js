@@ -54,7 +54,8 @@ Package.onUse(function(api) {
     'client/templates/snaxterLayout/assets/images/snaxter_icon.jpg',
     'client/templates/snaxterLayout/assets/images/wandtafel.jpg',
     'client/templates/snaxterLayout/assets/images/zuckerrohr.png',
-    
+    'client/templates/snaxterLayout/assets/images/scydev-logo.png',
+
     'client/templates/snaxterLayout/assets/socicon/fonts/socicon.woff',
     'client/templates/snaxterLayout/assets/socicon/fonts/socicon.ttf',
     'client/templates/snaxterLayout/assets/socicon/fonts/socicon.eot',
